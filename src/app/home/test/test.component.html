@@ -1,0 +1,999 @@
+<body id="tope">
+
+  
+
+    <section class="estamos estamos--test py-5">
+        <div class="container pt-5">
+            <div class="row py-5">
+                <div class="col-12 text-center blanco pt-5">
+                   <!--  <h1 class="tituh4">CITAS</h1> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-grisc py-5">
+        <div class="container py-5">
+            <div class="row negro">
+                <div class="col-12 col-lg-6 py-3">
+                    <h1 class="titu">SEMÁFORO DE FRANQUICIABILIDAD</h1>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <br>
+                    <!-- <p style="text-align: justify;">En FRANQUICIAT® nos encontramos comprometidos contigo, por lo
+                        anterior nos interesa conocer el estado de tu negocio para así atender a tus necesidades
+                        específicas. A continuación ponemos a tu disposición el siguiente "Semáforo de
+                        Franquiciabilidad" con el cual podrás descubrir el estatus en el que se encuentra.</p> -->
+                        <p style="text-align: justify;">
+                            ¿Tu negocio está preparado para ser franquicia? Conoce la respuesta a esta pregunta con este test. 
+                            Recuerda que el resultado es una recomendación general de FRANQUICIAT®. Si tienes más dudas, 
+                            puedes reservar una cita con nuestros especialistas, o bien, contactarnos en nuestro chat en línea. 
+                            En FRANQUICIAT® nos encontramos comprometidos en darte la mejor orientación online. 
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <ng-template [ngIf]="formu">
+        <section class="py-5">
+            <div class="container py-3">
+                <div class="row pb-5 justify-content-center">
+                    <div class="col-12 col-lg-8">
+                        <form autocomplete="off">
+                            <div _ngcontent-qws-c143="" class="mb-3 row">
+                                <div _ngcontent-qws-c143="" class="col-sm-12">
+
+                                    <div class="row">
+
+
+
+
+
+
+
+
+                                        <div class="col-12 col-lg-6 mb-4 wow fadeInDown" data-wow-delay="0s">
+                                            <div class="bg-gris p-4 mb-3 h-100">
+                                                <strong _ngcontent-qws-c143="" class="borde">ㅤ 1. ¿Eres dueño de una
+                                                    marca registrada ante el Instituto Mexicano de la Propiedad
+                                                    Industrial (IMPI)? ㅤ</strong>
+                                                <br _ngcontent-qws-c143=""><br _ngcontent-qws-c143="">
+                                                <div _ngcontent-qws-c143="" class="form-check">
+                                                    <input type="radio" name="uno" [(ngModel)]="uno" value="a"
+                                                        id="flexRadioDefault1"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid">
+                                                    <label _ngcontent-qws-c143="" for="flexRadioDefault1"
+                                                        class="form-check-label"> Si </label>
+                                                </div>
+                                                <div _ngcontent-qws-c143="" class="form-check">
+                                                    <input type="radio" name="uno" [(ngModel)]="uno" value="b"
+                                                        id="flexRadioDefault2"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid">
+                                                    <label _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> No </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+                                        <div class="col-12 col-lg-6 mb-4 wow fadeInDown" data-wow-delay="0s">
+                                            <div class="bg-gris p-4 mb-3 h-100">
+                                                <strong _ngcontent-qws-c143="" class="borde">ㅤ 2. ¿La marca es propiedad
+                                                    de una sola persona o de varias? ㅤ</strong>
+                                                <br _ngcontent-qws-c143=""><br _ngcontent-qws-c143="">
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="dos" [(ngModel)]="dos" value="a" id="flexRadioDefault1"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault1"
+                                                        class="form-check-label"> Una sola </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="dos" [(ngModel)]="dos" value="b" id="flexRadioDefault2"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> Varias </label></div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="col-12 col-lg-12 mb-4 wow fadeInDown" data-wow-delay="0s">
+                                            <div class="bg-gris p-4 mb-3 h-100">
+                                                <strong _ngcontent-qws-c143="" class="borde">ㅤ 3. De la siguiente lista
+                                                    selecciona el tipo de productos y/o servicios que ofreces al público
+                                                    y descríbelos.</strong>
+                                                <br _ngcontent-qws-c143=""><br _ngcontent-qws-c143="">
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="tres" [(ngModel)]="tres" value="a" id="flexRadioDefault1"
+                                                        (click)="btres2()"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault1"
+                                                        class="form-check-label"> Servicios generales que no son
+                                                        financieros </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="tres" [(ngModel)]="tres" value="b" id="flexRadioDefault2"
+                                                        (click)="btres2()"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> Mercadotecnia y publicidad </label>
+                                                </div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="tres" [(ngModel)]="tres" value="c" id="flexRadioDefault2"
+                                                        (click)="btres2()"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> Organización de todo tipo de eventos
+                                                    </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="tres" [(ngModel)]="tres" value="d" id="flexRadioDefault2"
+                                                        (click)="btres2()"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> Servicios de transporte de personal o
+                                                        mercancías </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="tres" [(ngModel)]="tres" value="e" id="flexRadioDefault2"
+                                                        (click)="btres2()"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> Diseño, fabricación y comercialización
+                                                        de todo tipo de bienes </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="tres" [(ngModel)]="tres" value="f" id="tres"
+                                                        (click)="btres2()"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> Elaboración, distribución y
+                                                        comercialización de bebidas y/o comestibles </label></div>
+                                                        <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                            name="tres" [(ngModel)]="tres" value="g" id="flexRadioDefault2"
+                                                            (click)="btres2()"
+                                                            class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                            _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                            class="form-check-label">Servicios Financieros</label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="tres" value="h" (click)="btres()" id="tres"
+                                                        class="form-check-input"><label _ngcontent-qws-c143=""
+                                                        for="flexRadioDefault2" class="form-check-label"> Otros </label>
+                                                    <ng-template [ngIf]="tress">
+                                                        <textarea class="input-textarea" name="mensaje" placeholder="Describa qué productos o servicios ofrece."></textarea>
+                                                    </ng-template>
+                                                    <!---->
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                                        
+                                        <div class="col-12 col-lg-6 mb-4 wow fadeInDown" data-wow-delay="0s">
+                                            <div class="bg-gris p-4 mb-3 h-100">
+                                                <strong _ngcontent-qws-c143="" class="borde">ㅤ 4. ¿Tu negocio genera los suficientes ingresos para cubrir tus gastos y te sobra? ㅤ</strong>
+                                                <br _ngcontent-qws-c143=""><br _ngcontent-qws-c143="">
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="cuatro" [(ngModel)]="cuatro" value="a"
+                                                        id="flexRadioDefault1"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault1"
+                                                        class="form-check-label"> Si </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="cuatro" [(ngModel)]="cuatro" value="b"
+                                                        id="flexRadioDefault2"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> No </label></div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="col-12 col-lg-6 mb-4 wow fadeInDown" data-wow-delay="0s">
+                                            <div class="bg-gris p-4 mb-3 h-100">
+                                                <strong _ngcontent-qws-c143="" class="borde">ㅤ 5. ¿Te han preguntado o insistido sobre adquirir una franquicia de tu negocio? ㅤ</strong>
+                                                <br _ngcontent-qws-c143=""><br _ngcontent-qws-c143="">
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="cinco" [(ngModel)]="cinco" value="a"
+                                                        id="flexRadioDefault1"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault1"
+                                                        class="form-check-label"> Si </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="cinco" [(ngModel)]="cinco" value="b"
+                                                        id="flexRadioDefault2"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> No </label></div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="col-12 col-lg-6 mb-4 wow fadeInDown" data-wow-delay="0s">
+                                            <div class="bg-gris p-4 mb-3 h-100">
+                                                <strong _ngcontent-qws-c143="" class="borde">ㅤ 6. ¿Cuánto tiempo tiene existiendo tu negocio? ㅤ</strong>
+                                                <br _ngcontent-qws-c143=""><br _ngcontent-qws-c143="">
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="seis" [(ngModel)]="seis" value="a"
+                                                        id="flexRadioDefault1"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault1"
+                                                        class="form-check-label"> Menos de 6 meses </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="seis" [(ngModel)]="seis" value="b"
+                                                        id="flexRadioDefault2"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> Entre 6 y 12 meses </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="seis" [(ngModel)]="seis" value="c"
+                                                        id="flexRadioDefault2"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> Entre 1 y 3 años </label></div>
+                                                        <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                            name="seis" [(ngModel)]="seis" value="d"
+                                                            id="flexRadioDefault2"
+                                                            class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                            _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                            class="form-check-label"> Más de 3 años </label></div>
+
+
+                                               <!--  <br _ngcontent-qws-c143=""><br _ngcontent-qws-c143="">
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="seis" [(ngModel)]="seis" value="a" id="flexRadioDefault1"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault1"
+                                                        class="form-check-label"> Si </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="seis" [(ngModel)]="seis" value="b" id="flexRadioDefault2"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> No </label></div> -->
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="col-12 col-lg-6 mb-4 wow fadeInDown" data-wow-delay="0s">
+                                            <div class="bg-gris p-4 mb-3 h-100">
+                                                <strong _ngcontent-qws-c143="" class="borde">ㅤ 7. ¿Consideras que la competencia en tu giro es? ㅤ</strong>
+                                                <br _ngcontent-qws-c143=""><br _ngcontent-qws-c143="">
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="siete" [(ngModel)]="siete" value="a"
+                                                        id="flexRadioDefault1"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault1"
+                                                        class="form-check-label"> Alta </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="siete" [(ngModel)]="siete" value="b"
+                                                        id="flexRadioDefault2"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> Media </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="siete" [(ngModel)]="siete" value="c"
+                                                        id="flexRadioDefault2"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> Baja </label></div>
+
+
+                                               <!--  <br _ngcontent-qws-c143=""><br _ngcontent-qws-c143="">
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="siete" [(ngModel)]="siete" value="a"
+                                                        id="flexRadioDefault1"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault1"
+                                                        class="form-check-label"> Si </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="siete" [(ngModel)]="siete" value="b"
+                                                        id="flexRadioDefault2"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> No </label></div> -->
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="col-12 col-lg-6 mb-4 wow fadeInDown" data-wow-delay="0s">
+                                            <div class="bg-gris p-4 mb-3 h-100">
+                                                <strong _ngcontent-qws-c143="" class="borde">ㅤ 8. ¿Con cuántos puntos de venta cuenta tu negocio actualmente? ㅤ</strong>
+                                                <br _ngcontent-qws-c143=""><br _ngcontent-qws-c143="">
+                                                <input type="number" name="ocho" [(ngModel)]="ocho" class="input-textarea">
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="col-12 col-lg-6 mb-4 wow fadeInDown" data-wow-delay="0s">
+                                            <div class="bg-gris p-4 mb-3 h-100">
+                                                <strong _ngcontent-qws-c143="" class="borde">ㅤ 9. ¿Tienes definidos y estandarizados los procesos que te permiten operar tu negocio? ㅤ</strong>
+                                                  <br _ngcontent-qws-c143=""><br _ngcontent-qws-c143="">
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="nueve" [(ngModel)]="nueve" value="a"
+                                                        id="flexRadioDefault1"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault1"
+                                                        class="form-check-label"> Si </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="nueve" [(ngModel)]="nueve" value="b"
+                                                        id="flexRadioDefault2"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> No </label></div>
+                                                
+                                                <!-- <br _ngcontent-qws-c143=""><br _ngcontent-qws-c143="">
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="nueve" [(ngModel)]="nueve" value="a"
+                                                        id="flexRadioDefault1"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault1"
+                                                        class="form-check-label"> Alta </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="nueve" [(ngModel)]="nueve" value="b"
+                                                        id="flexRadioDefault2"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> Media </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="nueve" [(ngModel)]="nueve" value="c"
+                                                        id="flexRadioDefault2"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> Baja </label></div> -->
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="col-12 col-lg-6 mb-4 wow fadeInDown" data-wow-delay="0s">
+                                            <div class="bg-gris p-4 mb-3 h-100">
+                                                <strong _ngcontent-qws-c143="" class="borde">ㅤ 10. ¿Cuentas con un perfil financiero de tu negocio, debidamente elaborado? 
+                                                    ㅤ</strong>
+                                                <br _ngcontent-qws-c143=""><br _ngcontent-qws-c143="">
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="diez" [(ngModel)]="diez" value="a" id="flexRadioDefault1"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault1"
+                                                        class="form-check-label"> Si </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="diez" [(ngModel)]="diez" value="b" id="flexRadioDefault2"
+                                                        class="form-check-input ng-untouched ng-pristine ng-valid"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> No </label></div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                                       <!--  <div class="col-12 col-lg-6 mb-4 wow fadeInDown" data-wow-delay="0s">
+                                            <div class="bg-gris p-4 mb-3 h-100">
+                                                <strong _ngcontent-qws-c143="" class="borde">ㅤ 11. ¿Con cuántos puntos
+                                                    de venta cuenta su negocio actualmente? ㅤ</strong>
+                                                <br _ngcontent-qws-c143=""><br _ngcontent-qws-c143=""><textarea
+                                                    cols="30" rows="6" class="input-textarea" name="once"
+                                                    [(ngModel)]="once"></textarea>
+                                            </div>
+                                        </div> -->
+
+
+
+
+
+
+
+
+
+
+                                   <!--      <div class="col-12 col-lg-6 mb-4 wow fadeInDown" data-wow-delay="0s">
+                                            <div class="bg-gris p-4 mb-3 h-100">
+                                                <strong _ngcontent-qws-c143="" class="borde">ㅤ 12. ¿Tiene definidos y
+                                                    estandarizados los procesos que le permiten operar su negocio?
+                                                    ㅤ</strong>
+                                                <br _ngcontent-qws-c143=""><br _ngcontent-qws-c143="">
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="doce" [(ngModel)]="doce" value="a" id="flexRadioDefault1"
+                                                        class="form-check-input ng-valid ng-dirty ng-touched"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault1"
+                                                        class="form-check-label"> Si </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="doce" [(ngModel)]="doce" value="b" id="flexRadioDefault2"
+                                                        class="form-check-input ng-valid ng-dirty ng-touched"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> No </label></div>
+                                            </div>
+                                        </div> -->
+
+
+
+
+
+
+
+
+
+
+
+                                     <!--    <div class="col-12 col-lg-6 mb-4 wow fadeInDown" data-wow-delay="0s">
+                                            <div class="bg-gris p-4 mb-3 h-100">
+                                                <strong _ngcontent-qws-c143="" class="borde">ㅤ 13.
+                                                    ¿Cuentas con un perfil financiero de tu negocio, debidamente
+                                                    elaborado? ㅤ</strong>
+                                                <br _ngcontent-qws-c143=""><br _ngcontent-qws-c143="">
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="trece" [(ngModel)]="trece" value="a"
+                                                        id="flexRadioDefault1"
+                                                        class="form-check-input ng-valid ng-dirty ng-touched"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault1"
+                                                        class="form-check-label"> Si </label></div>
+                                                <div _ngcontent-qws-c143="" class="form-check"><input type="radio"
+                                                        name="trece" [(ngModel)]="trece" value="b"
+                                                        id="flexRadioDefault2"
+                                                        class="form-check-input ng-valid ng-dirty ng-touched"><label
+                                                        _ngcontent-qws-c143="" for="flexRadioDefault2"
+                                                        class="form-check-label"> No </label></div><br
+                                                    _ngcontent-qws-c143="">
+                                            </div>
+                                        </div> -->
+
+
+
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <a type="button" (click)="finalizar()" class="btns--primario">FINALIZAR</a>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </ng-template>
+
+    <!-- 
+
+    <ng-template [ngIf]="formu">
+        <section class="bg-gris">
+            <form autocomplete="off">
+                <div class="container py-5">
+                    <div class="row justify-content-center pb-5">
+                        <div class="col-12 col-lg-8">
+                            <div class="bg-blanco redondo p-5">
+
+
+                                <div class="mb-3 row">
+
+                                    <div class="col-sm-12">
+                                        <strong class="borde">ㅤ 1. ¿Es dueño de una marca registrada ante el Instituto
+                                            Mexicano de la Propiedad
+                                            Industrial (IMPI)? ㅤ</strong>
+                                        <br>
+                                        <br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="uno" [(ngModel)]="uno"
+                                                value="a" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Si
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="uno" [(ngModel)]="uno"
+                                                value="b" id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                No
+                                            </label>
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <strong class="borde">ㅤ 2. ¿La marca es propiedad de una sola persona o de
+                                            varias? ㅤ</strong>
+                                        <br>
+                                        <br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="dos" [(ngModel)]="dos"
+                                                value="a" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Una sola
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="dos" [(ngModel)]="dos"
+                                                value="b" id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Varias
+                                            </label>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <strong class="borde">ㅤ 3. De la siguiente lista seleccione el tipo de productos
+                                            y/o servicios que
+                                            ofrece al
+                                            público y descríbalos.</strong>
+                                        <br>
+                                        <br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="tres" [(ngModel)]="tres"
+                                                value="a" id="flexRadioDefault1" (click)="btres2()">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Servicios generales que no son financieros
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="tres" [(ngModel)]="tres"
+                                                value="b" id="flexRadioDefault2" (click)="btres2()">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Mercadotecnia y publicidad
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="tres" [(ngModel)]="tres"
+                                                value="c" id="flexRadioDefault2" (click)="btres2()">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Organización de todo tipo de eventos
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="tres" [(ngModel)]="tres"
+                                                value="d" id="flexRadioDefault2" (click)="btres2()">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Servicios de transporte de personal o mercancías
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="tres" [(ngModel)]="tres"
+                                                value="e" id="flexRadioDefault2" (click)="btres2()">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Diseño, fabricación y comercialización de todo tipo de bienes
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="tres" [(ngModel)]="tres"
+                                                value="f" id="tres" (click)="btres2()">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Elaboración, distribución y comercialización de bebidas y/o comestibles
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="tres" value="g"
+                                                (click)="btres()" id="tres">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Otra
+                                            </label>
+                                            <ng-template [ngIf]="tress">
+                                                <textarea class="input_abogado redondo mb-3">
+                                                </textarea>
+                                            </ng-template>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <strong class="borde">ㅤ 4. ¿Los ingresos de su negocio son atractivos?
+                                            ㅤ</strong>
+                                        <br>
+                                        <br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="cuatro"
+                                                [(ngModel)]="cuatro" value="a" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Si
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="cuatro"
+                                                [(ngModel)]="cuatro" value="b" id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                No
+                                            </label>
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <strong class="borde">ㅤ 5. ¿El crecimiento de su negocio ha sido gradual y
+                                            sostenido? ㅤ</strong>
+                                        <br>
+                                        <br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="cinco"
+                                                [(ngModel)]="cinco" value="a" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Si
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="cinco"
+                                                [(ngModel)]="cinco" value="b" id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                No
+                                            </label>
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <strong class="borde">ㅤ 6. ¿Le han preguntado o insistido sobre adquirir una
+                                            franquicia de su negocio? ㅤ</strong>
+                                        <br>
+                                        <br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="seis" [(ngModel)]="seis"
+                                                value="a" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Si
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="seis" [(ngModel)]="seis"
+                                                value="b" id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                No
+                                            </label>
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <strong class="borde">ㅤ 7. ¿Su negocio sería atractivo fuera de su localidad?
+                                            ㅤ</strong>
+                                        <br>
+                                        <br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="siete"
+                                                [(ngModel)]="siete" value="a" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Si
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="siete"
+                                                [(ngModel)]="siete" value="b" id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                No
+                                            </label>
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <strong class="borde">ㅤ 8. ¿Cuánto tiempo tiene existiendo su negocio?
+                                            ㅤ</strong>
+                                        <br>
+                                        <br>
+                                        <textarea class="input_abogado redondo mb-3" name="ocho" [(ngModel)]="ocho">
+                </textarea>
+                                        <br>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <strong class="borde">ㅤ 9. ¿Considera que la competencia en su giro es?
+                                            ㅤ</strong>
+                                        <br>
+                                        <br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nueve"
+                                                [(ngModel)]="nueve" value="a" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Alta
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nueve"
+                                                [(ngModel)]="nueve" value="b" id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Media
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nueve"
+                                                [(ngModel)]="nueve" value="c" id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Baja
+                                            </label>
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <strong class="borde">ㅤ 10. ¿Existe un equilibrio calidad – precio en los
+                                            productos y/o servicios que
+                                            ofrece? ㅤ</strong>
+                                        <br>
+                                        <br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="diez" [(ngModel)]="diez"
+                                                value="a" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Si
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="diez" [(ngModel)]="diez"
+                                                value="b" id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                No
+                                            </label>
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <strong class="borde">ㅤ 11. ¿Con cuántos puntos de venta cuenta su negocio
+                                            actualmente? ㅤ</strong>
+                                        <br>
+                                        <br>
+                                        <textarea class="input_abogado redondo mb-3" name="once" [(ngModel)]="once">
+                 </textarea>
+                                        <br>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <strong class="borde">ㅤ 12. ¿Tiene definidos y estandarizados los procesos que
+                                            le permiten operar su
+                                            negocio? ㅤ</strong>
+                                        <br>
+                                        <br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="doce" [(ngModel)]="doce"
+                                                value="a" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Si
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="doce" [(ngModel)]="doce"
+                                                value="b" id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                No
+                                            </label>
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <strong class="borde">ㅤ 13. ¿Cuenta con un perfil financiero de su negocio,
+                                            debidamente elaborado? ㅤ</strong>
+                                        <br>
+                                        <br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="trece"
+                                                [(ngModel)]="trece" value="a" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Si
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="trece"
+                                                [(ngModel)]="trece" value="b" id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                No
+                                            </label>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <a type="button" (click)="finalizar()" class="btns--primario">FINALIZAR</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </ng-template> -->
+
+    <ng-template [ngIf]="sverde">
+        <section class="bg-gris py-5">
+            <div class="container py-5">
+                <div class="row pb-5">
+                    <div class="col-12 ">
+                        <div class="stiky text-center">
+                            <h4 class="tituh3 mb-5">¡Estás listo!</h4>
+                            <!--verde-->
+                          <!--   <h2 class="bold h3 mb-4">Riesgo total: <span class="verde">Tu empresa va bien</span></h2> -->
+                            <img class="mb-4" src="assets/images/semVerde.svg" alt="Diez-legal" width="130">
+                           <!--  <p class="bold h4 mb-5">¡TIENES TODO PARA CRECER! Hemos identificado que cuentas con los
+                                elementos necesarios para hacer crecer tu negocio bajo el modelo de franquicia. Te
+                                sugerimos prestar especial atención a los procesos que componen la operación de tu
+                                negocio, nuestros servicios de “Manualización” y “Contratos de Franquicia” son ideales
+                                para ti.</p> -->
+                                <p class="bold h4 mb-5">
+                                    Te sugerimos contratar el <b>Plan Premium</b>. En este plan nosotros nos ocuparemos de TODO el desarrollo de tu 
+                                    modelo de negocio bajo el esquema de franquicia. Da click aquí y contratalo. 
+                                    Deja en manos de nuestros especialistas el diseño de tus manuales, contratos, 
+                                    y plan financiero para que tu tiempo lo dispongas en hacer crecer tu negocio. 
+                                </p>
+                        </div>
+                    </div>
+                    <a type="button" href="javascript:location.reload()" class="btns--primario">INTENTAR DE NUEVO</a>
+                </div>
+            </div>
+        </section>
+    </ng-template>
+
+
+
+    <ng-template [ngIf]="samarillo">
+        <section class="bg-gris py-5">
+            <div class="container py-5">
+                <div class="row pb-5">
+                    <div class="col-12 ">
+                        <div class="stiky text-center">
+                            <h4 class="tituh3 mb-5">¡Estás casi listo!</h4>
+                            <!--amarillo-->
+                          <!--   <h2 class="bold h3 mb-4">Riesgo total: <span class="amarillo">Alerta amarilla</span></h2> -->
+                            <img class="mb-4" src="assets/images/semAmarillo.svg" alt="Diez-legal" width="130">
+                           <!--  <p class="bold h4 mb-5">¡PRECAUCIÓN! Hemos identificado que a tu negocio, le hace falta un
+                                requisito indispensable para crecer bajo el modelo de franquicia. Te sugerimos iniciar
+                                con el “Registro de Marca” y contratar de manera paralela la “Manualización” y
+                                “Contratos de Franquicia”. </p> -->
+                                <p class="bold h4 mb-5">
+                                    <b>Si tu negocio en estos 6 meses ha tenido aceptación ¡vas por buen camino! </b>
+                                    Te sugerimos empezar a planear tu modelo de sistemas de franquicia. 
+                                    Te recomendamos agendar una cita con uno de nuestros especialistas para que conozcas las recomendaciones antes de dar inicio a tu proceso. 
+
+                                </p>
+
+                        </div>
+                    </div>
+                    <a type="button" href="javascript:location.reload()" class="btns--primario">INTENTAR DE NUEVO</a>
+                </div>
+            </div>
+        </section>
+    </ng-template>
+
+
+
+
+    <ng-template [ngIf]="srojo">
+        <section class="bg-gris py-5">
+            <div class="container py-5">
+                <div class="row pb-5">
+                    <div class="col-12 ">
+                        <div class="stiky text-center">
+                            <h4 class="tituh3 mb-5">Prepárate Más</h4>
+                            <!--rojo-->
+                           <!--  <h2 class="bold h3 mb-4">Riesgo total: <span class="rojo">Alerta Roja</span></h2> -->
+                            <img class="mb-4" src="assets/images/semRojo.svg" alt="Diez-legal" width="130">
+                           <!--  <p class="bold h4 mb-5">¡ALTO! Hemos identificado que tu negocio aun no es apto para
+                                desarrollarse bajo el modelo de franquicia. Te sugerimos trabajar con mayor dedicación
+                                en el aspecto financiero antes de dar este paso. Nuestra “Asesoría Financiera” aunada al
+                                servicio “Contratos de Franquicia” y “Manualización” son los servicios ideales para tu
+                                situación.</p> -->
+                                <p class="bold h4 mb-5">
+                                    <b>Tener un sistema de franquicias implica un gran responsabilidad.</b>
+                                    Tu negocio aún tiene áreas de oportunidad relacionadas con aspectos financieros. No te desanimes, 
+                                    nuestros especialistas están disponibles para ayudarte. Contáctanos y conoce como podemos hacerlo. 
+
+                                </p>
+                        </div>
+                    </div>
+                    <a type="button" href="javascript:location.reload()" class="btns--primario">INTENTAR DE NUEVO</a>
+                </div>
+            </div>
+        </section>
+    </ng-template>
+
+</body>

@@ -1,0 +1,38 @@
+.lawyer-item-list,
+.lawyer-item-list-buttom {
+    transition: transform 0.3s ease;
+}
+
+.lawyer-item-list-buttom {
+    width: 100%;
+}
+
+.lawyer-item-list:hover,
+.lawyer-item-list-buttom:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.p_large {
+    width: 8rem;
+}
+
+.bottom-column {
+    display: flex;
+    justify-content: center;
+    height: 20rem;
+    width: 26rem;
+    align-items: baseline;
+}
+
+.p-dropdown {
+    width: 100%;
+    border: 1px solid #c59b51;
+    background: transparent;
+    border-radius: 0;
+    padding: 2px;
+}
+
+.ui-dropdown-panel, .ui-multiselect-panel {
+    z-index: 1050 !important; /* Asegura que se renderice por encima de otros elementos */
+  }

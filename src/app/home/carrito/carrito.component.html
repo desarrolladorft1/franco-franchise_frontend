@@ -1,0 +1,182 @@
+<body id="tope">
+	<head>
+    <script type="text/javascript" src="https://resources.openpay.mx/lib/openpay-js/1.2.38/openpay.v1.min.js"></script>
+  </head>
+	<!-- <app-nav></app-nav> -->
+
+	<section class="estamos bg-negro py-5">
+        <div class="container pt-5">
+            <div class="row py-5">
+                <div class="col-12 text-center blanco pt-5">
+                    <h1 class="titu">TU CARRITO</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <ng-template [ngIf]="lleno">
+        <section class="bg-crema py-5">
+          <div class="container">
+            <div class="row pb-5">
+              <div class="col-12 text-center">
+                <h1 class="grande thin dorado">Tu carrito</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section class="bg-crema">
+          <div class="container px-5">
+            <div class="row pb-2 text-center d-none d-lg-flex">
+              <div class="tit col-3 text-start">Producto</div>
+              <div class="tit col">Cantidad</div>
+              <div class="tit col">Precio</div>
+              <div class="tit col">Subtotal</div>
+              <div class="tit col-1">&nbsp;</div>
+            </div>
+      
+            <div id="bp_1">
+              <div id="bloque_productos_1" class="row text-center justify-conten-between">
+                <div class="col-12 mb-2" *ngFor="let car of contratosShoppyCart; let i=index">
+                  <!------ciclo------>
+      
+                  <div class="w__prod p-2 p-lg-0 mb-3">
+                    <div class="row align-items-center">
+                      <div class="col-12 col-lg-3 order-1 order-lg-1">
+                        <div class="
+                          prod
+                          d-flex
+                          align-items-center
+                          justify-content-center justify-content-lg-start
+                          p-2
+                        ">
+                          <img src="{{car.urli}}" width="80" />
+                          <div class="w__prod--nombre text-start">
+                            <p class="ms-4 mb-0 fw-bold">{{car.producto_nombre || "Cita con abogado"}}</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg order-3 order-lg-2">
+                        <div class="prod">
+                          <div class="w__prod--cantidad bg-grisc text-center m-auto p-2">
+                            <div class="row align-items-center m-0">
+      
+                              <div class="col">
+                                {{car.cantidad || 1}}
+                              </div>
+      
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 d-none d-lg-block col-lg order-2 order-lg-3">
+                        <div class="prod">
+                          <div class="w__prod--precio">
+                            <p class="tit mb-0">${{car.precio_unitario}} MXN</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg order-2 order-lg-4">
+                        <div class="prod text-center text-lg-center">
+                          <p class="d-block d-lg-none tit mb-2">Precio</p>
+                          <div class="w__prod--sub bold">
+                            <p class="mb-0">${{car.precio}} MXN</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-1 order-5 order-lg-5">
+                        <div class="prod text-center">
+                          <a type="button" (click)="_deleteItem(car.idTransaccion)">
+                            <div class="
+                              w__prod--borrar
+                              d-flex
+                              align-items-center
+                              justify-content-center
+                              mx-auto
+                            ">
+                              <i class="pi pi-trash"></i>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+      
+                  </div>
+      
+      
+      
+                  <!------fin-ciclo------>
+                </div>
+              </div>
+      
+              <div class="row justify-content-end">
+                <div class="col-12 col-lg-4">
+                  <div class="sumas bg-grisf blanco redondo p-3">
+                    <div class="row">
+                      <div class="col-6 text-end tit">Subtotal</div>
+                      <div class="col-6 bold">
+                        $<strong>{{ subtotal }}</strong><span class="light f12"> MXN</span>
+                      </div>
+                      <div class="col-6 text-end tit">IVA</div>
+                      <div class="col-6 bold">
+                        $<strong>{{ iva }}</strong> <span class="light f12"> MXN</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="total bg-dorado blanco redondo p-3 mt-2">
+                    <div class="row align-items-center">
+                      <div class="col-6 text-end">Total</div>
+                      <div class="col-6 h3 mb-0 bold">
+                        $<strong>{{ total}}</strong><span class="light f12"> MXN</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="bp_2"></div>
+      
+      
+      
+            <div class="row my-5">
+              <div class="col-12 col-lg-6 text-center text-lg-start mb-4">
+                <a routerLink="/" class="btns btns--obscuro">SEGUIR COMPRANDO</a>
+              </div>
+              <div class="col-12 col-lg-6 text-center text-lg-end">
+                <!-- <a routerLink="/informacion" class="btns btns--obscuro">CONTINUAR</a> -->
+                <a (click)="buy()" class="btns btns--obscuro">CONTINUAR</a>
+              </div>
+            </div>
+      
+            <div class="py-5"></div>
+          </div>
+        </section>
+      </ng-template>
+      
+      <ng-template [ngIf]="vacio">
+      
+        <section class="bg-crema py-5">
+          <div class="container">
+            <div class="row pb-5">
+              <div class="col-12 text-center">
+                <h1 class="grande thin dorado">Carrito vacío</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+      
+        <section class="py-5">
+          <div class="container pt-5 px-5">
+            <div class="col-12 text-center pt-5">
+              <img src="assets/images/carro.png" alt="" />
+            </div>
+            <div class="row justify-content-between my-5">
+              <div class="col-12 col-lg-3 text-center pt-5">
+                <a routerLink="/" class="btns btns--obscuro">IR AL INICIO</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </ng-template>
+</body> 

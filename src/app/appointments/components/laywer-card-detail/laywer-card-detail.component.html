@@ -1,0 +1,140 @@
+
+<!-- <ng-container *ngIf="lawyer">
+    <div class="grid">
+        <div class="col-12 col-lg-3">
+            <img src="assets/images/citas--1.jpg" class="responsive mt-2 ml-2">
+        </div>
+        <div class="col-9">
+            <div class="grid">
+                <div class="col-12">
+                    <div class="flex align-content-start align-items-stretch mt-2" >
+                        <div class="flex flex-wrap align-content-center justify-content-between ">
+                            <p-tag styleClass="destacado-tag" *ngIf="lawyer.destacado" value="DESTACADO" tooltipStyleClass="tooltipStyleClass" pTooltip="Este perfil coincide con tus criterios de búsqueda y aparece mejor posicionado por su valoracion, disponibilidad, informacion en su perfil, y tipo de suscripción." tooltipPosition="top" placeholder="top"></p-tag>
+                            <h4 class="mt-3 ml-2"><span class="text-link" (click)="navToLawyer()">{{lawyer.nombres|titlecase}} {{lawyer.apellidos|titlecase}}</span></h4>
+                        </div>
+                        <div class="flex align-content-center  justify-content-between align-items-center ml-3"> -->
+                            <!-- <app-favorites-lawyers [lawyer]="lawyer"
+                                                   ></app-favorites-lawyers> -->
+                       <!--  </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <span>{{lawyer.specialty | cutString:50:showMore}} <a class="show-more-color" *ngIf="lawyer.specialty.length > 50" (click)="showMoreText(showMore)">{{text}}</a></span>
+    
+                </div>
+                <div class="col-12">
+                    <div class="flex"> -->
+                        <!-- <p-rating [(ngModel)]="lawyer.rating" [readonly]="true" [cancel]="false"></p-rating>
+                        <div class="ml-2">{{lawyer.cantOpiniones | number}} opiniones</div> -->
+                   <!--  </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-12 ml-3"><i class="pi pi-video mr-1"></i>Ofrece consultas en Linea</div>
+        <div class="col-12 ml-3"><span class="text-apagado">{{lawyer.lastReview|cutString:150:showMoreReview}}</span>  <a *ngIf="lawyer.lastReview.length > 150" (click)="showMoreTextReview(showMoreReview)"> {{text}}</a></div>
+        <ng-container *ngFor="let service of pricesArry | async">
+            <div class="col-12 ml-3"><i class="pi pi-money-bill mr-1"></i>{{service.name}} - {{service.price|currency:'MXN'}}</div>
+        </ng-container> 
+    </div>
+
+</ng-container> -->
+
+
+<ng-container *ngIf="lawyer">
+    <div class=" col-12 col-lg-12">
+    <div class="lista--cursos mb-4">
+        <div class="row align-items-center">
+           
+          <div
+            class="col-12 col-lg-3 mb-3 position-relative"
+           
+          >
+         <!--  <img src="assets/images/citas--1.jpg" class="borde---amarillo" class="d-block w-100" (click)="navToLawyer()" type="button"> -->
+            <img class="borde---amarillo" class="d-block w-100" (click)="navToLawyer()" type="button" src="{{lawyer.avatar}}">
+            <img class="triangulo-negro" src="assets/images/triangulo-negro.svg" width="40">
+          </div>
+
+          <div class=" col-12 col-lg-5">
+            <div class="px-5">
+              <div class="d-flex mb-4">
+                <div  class="tipo me-3">Destacado</div>
+                <div class="guardar ">
+                  
+                </div>                  
+              </div>
+              <div style="text-align: justify;">
+              <h5 class="bebas serif" (click)="navToLawyer()" type="button" >
+                {{lawyer.nombres}} {{lawyer.apellidos}}
+              </h5>
+              <p>{{lawyer.specialty | cutString:50:showMore}}</p>
+              <p class="">
+                <i class="fas fa-video"></i> Ofrece consultas en línea
+              </p>
+              <!--  <p class="mt-4">Lorem ipsum dolor sit amet consectetur elit acilis obcaecati dolor
+                                  officia, minus quos unde maxime ducimus netur mollitia acilis dolor officia, minus
+                                  quos unde maxime ducimus netur mollit.</p>  -->
+                                  <ng-container *ngFor="let service of pricesArry | async">
+                <a class="cita--linea"><span class="amarillo">{{service.name}}</span> {{service.price|currency:'MXN'}}– Por hora</a>
+            </ng-container> 
+            <a class="cita--linea2" routerLink="/contacto"><span class="amarillo">Cita de Asesoría Gratuita</span> Por 15 minutos</a> <br>
+            <a type="button" (click)="navToLawyer()" class="vermas f12 ms-4">VER MÁS<img src="assets/images/flecha2.svg" width="20"></a>
+        </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-lg-4">
+            <!-- <app-lawyer-schedule [lawyer]="lawyer" [days]="7"></app-lawyer-schedule>       -->
+          </div>
+        </div>
+      </div>
+      
+      <!-- <a href="#" class="btns btns--obscuro">VER MÁS</a>   -->
+    </div>
+</ng-container>                    
+     
+
+<!-- ************************ -->
+
+
+<!-- <ng-container *ngIf="lawyer">
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row mt-6">
+                <div class="col-12">
+                    <div class="lista--cursos mb-4 bg-negro">
+                        <div class="row blanco">
+                            <div class="col-12 col-lg-3">
+                                <img src="assets/images/citas--1.jpg" alt="" class="d-block w-100"> -->
+                                <!-- <img [src]="lawyer.avatar" alt=""> -->
+                           <!--  </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="p-5">
+                                    <div class="d-flex mb-4">
+                                        <p-tag styleClass="destacado-tag" *ngIf="lawyer.destacado" value="DESTACADO" tooltipStyleClass="tooltipStyleClass" pTooltip="Este perfil coincide con tus criterios de búsqueda y aparece mejor posicionado por su valoracion, disponibilidad, informacion en su perfil, y tipo de suscripción." tooltipPosition="top" placeholder="top"></p-tag>
+                                
+                                    </div>
+                                        <h3 class="mt-3 ml-2"><span class="text-link" (click)="navToLawyer()">{{lawyer.nombres|titlecase}} {{lawyer.apellidos|titlecase}}</span></h3>
+                              
+                                    <span>{{lawyer.specialty | cutString:50:showMore}} <a class="show-more-color" *ngIf="lawyer.specialty.length > 50" (click)="showMoreText(showMore)">{{text}}</a></span>
+                                    
+                                    <p class="blanco"><i class="fas fa-video"></i> Ofrece consultas en línea</p>
+                                    <p class="mt-4"><span class="text-apagado">{{lawyer.lastReview|cutString:150:showMoreReview}}</span>  <a *ngIf="lawyer.lastReview.length > 150" (click)="showMoreTextReview(showMoreReview)"> {{text}}</a></p>
+                                    <ng-container *ngFor="let service of pricesArry | async">
+                                        <div class="col-12 ml-3"><i class="fas fa-money-bill"></i> {{service.name}} - {{service.price|currency:'MXN'}}</div>
+                                    </ng-container> 
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5 bg-gris negro">
+                                <div class="p-5">
+                                    <app-lawyer-schedule [lawyer]="lawyer" [days]="7"></app-lawyer-schedule>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </ng-container> -->

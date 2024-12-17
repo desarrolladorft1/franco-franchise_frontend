@@ -1,0 +1,198 @@
+<!--<app-head [titulo]="titulo"></app-head> -->
+
+<body id="tope">
+    <section class="estamos estamos--citas py-5">
+        <div class="container pt-5">
+            <div class="row py-5">
+                <div class="col-12 text-center blanco pt-5">
+                    <!--  <h1 class="tituh4">CITAS</h1> -->
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- SECTION 1 -->
+    <section class="bg-grisc pt-5">
+
+        <div class="col-12 text-center blanco pt-5">
+            <h1 class="titu font-bebas section1-title" style="color: #000;">CITAS</h1>
+
+            <div class="row">
+
+                <h5 class="serif font-tt section1-text" style="text-align: center; color: #000;">Como equipo, estamos capacitados para
+                    resolver cada una de tus
+                    dudas. <br><b>Agenda una cita con nosotros.</b></h5>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="bg-crema py-5">
+        <div class="container py-5">
+            <div class="row pb-5">
+        
+              <div class="col-12 text-center mb-5">
+                
+                <div class="row mt-4">
+                  <div class="col-12 col-lg-3 mb-2">
+                    <input type="search" name="" id="" class="input" placeholder="Buscar por nombre..."
+                      [(ngModel)]="lawyerNameLastName" (keyup.enter)="filter()" />
+                  </div>
+                  <div class="col-12 col-lg-3 mb-2">
+                    <!-- <p-multiSelect [options]="sortOptions" [group]="true" [(ngModel)]="opcionesOrdenado"
+                      defaultLabel="Ordenar por..." scrollHeight="250px" display="chip" [filter]="false" [showHeader]="false"
+                      (onChange)="orderFilter($event, 'order')" class="ml-2 cita-select">
+                      <ng-template let-group pTemplate="group">
+                        <div class="p-d-flex p-ai-center">
+                          <span>{{group.label}}</span>
+                        </div>
+                      </ng-template>
+                    </p-multiSelect> -->
+                    <p-dropdown [options]="this.sortOptions" [(ngModel)]="opcionesOrdenado" placeholder="Ordenar por..."
+                      scrollHeight="250px" [filter]="false" class="ml-2 cita-select">
+                    </p-dropdown>
+        
+        
+                  </div>
+                  <div class="col-12 col-lg-3 mb-2">
+                    <p-multiSelect [options]="especialidad" defaultLabel="Seleccione una especialidad"
+                      (onChange)="setArraySpecialtyFilter($event)" optionLabel="name" [(ngModel)]="especialidadSeleccionada"
+                      display="chip" class="ml-2 cita-select">
+                    </p-multiSelect>
+                  </div>
+                  <div class="col-12 col-lg-3 mb-2">
+                    <input type="submit" value="Filtrar" (click)="filter()" />
+                  </div>
+                </div>
+              </div>
+        
+              @for (abog of lawyerList.lawyers; track abog.idAbogado){
+              <div class="col-12 col-lg-12">
+                <div class="lista--cursos mb-4">
+                  <div class="row align-items-center">
+                    <div class="col-12 col-lg-4 mb-4 lawyer-item-list" routerLink="/citas/detalle/{{ abog.idAbogado }}">
+                      <!-- <img src="assets/images/diez-legal--lista-curso.jpg" /> -->
+                      <img src="{{abog.avatar}}" class="d-block w-100">
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <div class="px-5">
+                        <div class="d-flex mb-4">
+                          <div *ngIf="abog.destacado" class="tipo me-3">Destacado</div>
+                          <div class="guardar dorado">
+                            <!-- <app-favorites-lawyers [lawyer]="abog"></app-favorites-lawyers> -->
+                          </div>
+                        </div>
+                        <h5 class="dorado h4">
+                          {{ abog.nombres }} {{ abog.apellidos }}
+                        </h5>
+                        <p class="p_large">{{ abog.specialty }}</p>
+                        <p-rating [(ngModel)]="abog.rating" [readonly]="true" [cancel]="false"
+                          [iconOnClass]="'fas fa-star star-selected'" [iconOffClass]="'fas fa-star star-no-selected'">
+                        </p-rating>
+                        <p>{{ abog.cantOpiniones + " " }}opiniones</p>
+                        <p class="dorado">
+                          <i class="fas fa-video"></i> Ofrece consultas en línea
+                        </p>
+                        <!--  <p class="mt-4">Lorem ipsum dolor sit amet consectetur elit acilis obcaecati dolor
+                                            officia, minus quos unde maxime ducimus netur mollitia acilis dolor officia, minus
+                                            quos unde maxime ducimus netur mollit.</p>  -->
+        
+                        <h5 class="dorado p_large">
+                          Cita en línea — MX${{ abog.servicios[0]?.dim_precios?.dim_precios_neto }}
+                        </h5>
+                      </div>
+                    </div>
+        
+                    <div class="col-12 col-lg-4 bottom-column">
+                      <!-- <app-lawyer-schedule [lawyer]="abog.toLawyerDeatail!()" [days]="7"></app-lawyer-schedule> -->
+                      <app-lawyer-schedule [pricePerDate]="abog.servicios[0]?.dim_precios?.dim_precios_neto || 0"
+                        [isLogued]="this.userDb !== null" [dates]="abog.dates || []"  [idAbogado]="abog.idAbogado" ></app-lawyer-schedule>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- <a href="#" class="btns btns--obscuro">VER MÁS</a>   -->
+              </div>}@empty {
+                <h1> NO SE ENCONTRO NINGUN ABOGADO</h1>
+              }
+
+            </div>
+          </div>
+
+                <!-- <ng-container style="background-color: var(--blanco-25); border-radius: 2rem"  *ngIf="lawyerList !== []">
+                    <p-dataView #dv [value]="lawyerList" [paginator]="true" [rows]="itemsPerPage"
+                        filterBy="nombres,apellidos,specialty" [sortField]="sortField" [sortOrder]="sortOrder"
+                        layout="list" [loading]="loading">
+
+                        <ng-template pTemplate="header">
+                            <div class="col-12">
+                                <div class="row mt-4">
+                                    <div class="col-12 col-lg-3 mb-2">
+                                        <input class="font-bebas" type="search" class="input_citas" placeholder="Buscar por nombre"
+                                            [(ngModel)]="lawyerNameLastName">
+                                    </div>
+                                    <div class="col-12 col-lg-3 mb-2">
+                                        <p-multiSelect [options]="sortOptions" [group]="true"
+                                            [(ngModel)]="opcionesOrdenado" defaultLabel="Ordenar por..."
+                                            scrollHeight="250px" display="chip" [filter]="false" [showHeader]="false"
+                                            (onChange)="orderFilter($event, 'order')" class="ml-2 font-bebas">
+                                            <ng-template let-group pTemplate="group">
+                                                <div class="p-d-flex p-ai-center">
+                                                    <span>{{group.label}}</span>
+                                                </div>
+                                            </ng-template>
+                                        </p-multiSelect>
+                                    </div>
+                                    <div class="col-12 col-lg-3 mb-2">
+                                        <p-multiSelect [options]="especialidad"
+                                            defaultLabel="Seleccione una especialidad"
+                                            (onChange)="setArraySpecialtyFilter($event)" optionLabel="name"
+                                            [(ngModel)]="especialidadSeleccionada" display="chip"
+                                            class="ml-2 cita-select font-bebas">
+                                        </p-multiSelect>
+                                    </div>
+                                    <div class="col-12 col-lg-3 mb-2">
+                                        <button pButton type="button" (click)="filter()"
+                                            style="background-color: var(--negro-25); border-color: #c9c9c9"><img
+                                                src="assets/images/search.svg" width="20" /><a
+                                                style="color:black"></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+
+
+
+
+                        <ng-template let-lawyer pTemplate="listItem">
+                            <div class="col-12">
+
+                                <div class="flex flex-column">
+                                    <div class="grid">
+                                        <div class="col-12">
+                                            <app-lawyer-card-detail [lawyer]="lawyer"></app-lawyer-card-detail>
+                                        </div> -->
+
+                                        <!--  <div class="col-6">
+                                    <app-lawyer-schedule [lawyer]="lawyer" [days]="7"></app-lawyer-schedule>
+                                </div> -->
+                                    <!-- </div>
+                                </div>
+                            </div>
+                        </ng-template>
+
+                        <ng-template pTemplate="empty">
+                            No se ha encontrado abogados con la busqueda.
+                        </ng-template>
+
+                    </p-dataView>
+                </ng-container> -->
+
+
+
+            
+    </section>
+</body>

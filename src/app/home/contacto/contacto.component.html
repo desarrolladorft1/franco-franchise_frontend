@@ -1,0 +1,496 @@
+<body id="tope">
+
+   
+
+    <p-dialog header="Contacto con un Especialista" [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}"
+        [draggable]="false" [resizable]="false">
+        <div class="modal-body" style="background: #222">
+    
+    
+    
+            <div class="row justify-content-center py-4">
+    
+                <div class="col-12 col-lg-12 mb-3">
+                    <form action="envios.php" method="post" class="seguir">
+                        <div class="redondo p-4" style="background: #222">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 mb-3">
+                                    <input class="input--carrito redondo border-0 p-2"
+                                        id="fnombre" [(ngModel)]="nombre" name="nombre"
+                                        placeholder="Nombre" required type="text">
+                                </div>
+                                <div class="col-12 col-lg-6 mb-3 pl-lg-0">
+                                    <input class="input--carrito redondo border-0 p-2"
+                                        id="fapellido" [(ngModel)]="apellidos"
+                                        name="apellidos" placeholder="Apellido" required
+                                        type="text">
+                                </div>
+                                <div class="col-12">
+                                    <input
+                                        class="input--carrito redondo border-0 p-2 mb-3"
+                                        id="femail" [(ngModel)]="email" name="email"
+                                        placeholder="Correo electrónico" required
+                                        type="text">
+                                </div>
+                                <div class="col-12">
+                                    <input
+                                        class="input--carrito redondo border-0 p-2 mb-3"
+                                        id="fempresa" [(ngModel)]="empresa"
+                                        name="empresa" placeholder="Empresa" required
+                                        type="text">
+                                </div>
+                                <div class="col-12">
+                                    <textarea [(ngModel)]="mensaje" name="mensaje"
+                                        class="input--carrito redondo border-0 p-2 mb-3"
+                                        id="" cols="30" rows="7"
+                                        placeholder="Mensaje"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="modal-footer">
+    
+                <div class="col-12 text-center mb-5">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" (click)="terminos()"><br>
+                         <a type="button" style="color: white;"
+                            > Acepto
+                            Términos y
+                            condiciones</a>.
+                    </label>
+                </div>
+    
+                <ng-template [ngIf]="btn">
+    
+                    <input type="submit" value="Enviar" class="btns--secundario"
+                        (click)="contacto(nombre,apellidos,email,empresa,mensaje)">
+    
+                </ng-template>
+            </div>
+    
+    
+        </div>
+            <ng-template pTemplate="footer">
+            <p-button icon="pi pi-check" (click)="displayModal=false" label="Cerrar" styleClass="p-button-text"></p-button>
+            </ng-template>
+    </p-dialog>
+    
+        <!-- <app-nav></app-nav> -->
+    
+        <section class="estamos estamos--financiamiento py-5">
+            <div class="container pt-5">
+                <div class="row py-5">
+                    <div class="col-12 text-center blanco pt-5">
+                       <!--  <h1 class="tituh4">CONTÁCTANOS</h1> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <section class="bg-grisc py-5">
+            
+                <div class="row py-5">
+                    <div class="col-12 text-center negro pt-5">
+                        <h2 class="titu">CONTÁCTANOS</h2>
+                    </div>
+                </div>
+          
+            <div class="container pb-5">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h2 class="card-title bebas mb-4 ">Atención al cliente</h2>
+                                <a href="tel:4424567890">
+                                    <i class="fas fa-duotone fa-phone negro"></i> <b> (442) 456 7890</b>
+                                </a>
+                                <br>
+                                <br>
+                                <p>Lunes a viernes: 10am - 6pm</p>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h2 class="card-title bebas mb-4">Redes Sociales</h2>
+    
+    
+                                <div class="row justify-content-center mt-4">
+                                    <div class="col-12 col-lg-3 mb-4">
+                                        <a href="https://www.facebook.com/FranquiciaT">
+                                            <img class="text-center" src="assets/images/fb.svg" width="60px">
+                                        </a><br>
+                                        <div class="mx-auto text-center">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3 mb-4">
+                                        <a href="https://www.instagram.com/franquiciat/">
+                                            <img class="text-center" src="assets/images/insta.svg" width="60px">
+                                        </a><br>
+                                        <div class="mx-auto text-center">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3 mb-4">
+                                        <a href="https://www.linkedin.com/company/franquiciat/">
+                                            <img class="text-center" src="assets/images/link.svg" width="60px">
+                                        </a><br>
+                                        <div class="mx-auto text-center">
+                                        </div>
+                                    </div>
+                                </div>
+    
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h2 class="card-title bebas mb-4">Hacer una pregunta</h2>
+                                <p class="card-text">Nuestros abogados se pondrán en contacto contigo lo antes posible.</p>
+                                <input type="submit" value="Enviar pregunta" class="btns--secundario" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" style="background: #222">
+    
+    
+    
+                                                <div class="row justify-content-center py-4">
+    
+                                                    <div class="col-12 col-lg-12 mb-3">
+                                                        <form action="envios.php" method="post" class="seguir">
+                                                            <div class="redondo p-4" style="background: #222">
+                                                                <div class="row">
+                                                                    <div class="col-12 col-lg-6 mb-3">
+                                                                        <input class="input--carrito redondo border-0 p-2"
+                                                                            id="fnombre" [(ngModel)]="nombre" name="nombre"
+                                                                            placeholder="Nombre" required type="text">
+                                                                    </div>
+                                                                    <div class="col-12 col-lg-6 mb-3 pl-lg-0">
+                                                                        <input class="input--carrito redondo border-0 p-2"
+                                                                            id="fapellido" [(ngModel)]="apellidos"
+                                                                            name="apellidos" placeholder="Apellido" required
+                                                                            type="text">
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <input
+                                                                            class="input--carrito redondo border-0 p-2 mb-3"
+                                                                            id="femail" [(ngModel)]="email" name="email"
+                                                                            placeholder="Correo electrónico" required
+                                                                            type="text">
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <input
+                                                                            class="input--carrito redondo border-0 p-2 mb-3"
+                                                                            id="fempresa" [(ngModel)]="empresa"
+                                                                            name="empresa" placeholder="Empresa" required
+                                                                            type="text">
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <textarea [(ngModel)]="mensaje" name="mensaje"
+                                                                            class="input--carrito redondo border-0 p-2 mb-3"
+                                                                            id="" cols="30" rows="7"
+                                                                            placeholder="Mensaje"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+    
+    
+                                            </div>
+                                            <div class="modal-footer">
+    
+                                                <div class="col-12 text-center mb-5">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" (click)="terminos()"> <a type="button"
+                                                            > Acepto
+                                                            Términos y
+                                                            condiciones</a>.
+                                                    </label>
+                                                </div>
+    
+                                                <ng-template [ngIf]="btn">
+    
+                                                    <input type="submit" value="Enviar" class="btns--secundario"
+                                                        (click)="contacto(nombre,apellidos,email,empresa,mensaje)">
+    
+                                                </ng-template>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <h1 class="bebas mb-4">Preguntas Frecuentes</h1>
+                <br>
+                <p-accordion>
+                    <p-accordionTab header="¿Cómo sé que servicios necesito contratar?" style="text-align: justify;">
+                        En FranquiciaT hemos desarrollado un software automatizado que te permite, a través del llenado de
+                        un pequeño formulario, descubrir cuáles son las necesidades de su negocio para ser desarrollado bajo
+                        el modelo de Franquicia, denominado Semáforo de franquiciabilidad.
+                    </p-accordionTab>
+                    <p-accordionTab header="¿Cuáles son los costos de sus servicios y que ofrecen?"
+                        style="text-align: justify;">
+                        Te ofrecemos dos planes de servicio para el desarrollo del modelo de franquicia para tu negocio:
+    
+                        <br>
+                        <br>
+                        <ul>
+                            <li>
+                                <b>Plan Plus:</b> <br>
+                                <p>Al contratar este plan te apoyamos a desarrollar tu negocio bajo el sistema de franquicia; dándote la protección en los elementos 
+                                    de propiedad industrial y diseño del marco legal de tu franquicia $47,000.00 (Cuarenta y siete mil pesos 00/100 M.N.) + IVA.
+                                </p>
+                            </li>
+    
+                            <li>
+                                <b>Plan Premium:</b>
+                                <p>Este plan te dará todas las herramientas necesarias para franquiciar tu negocio de forma segura, con la tranquilidad que nuestros
+                                    especialistas se encargarán del proceso de desarrollo de tu negocio bajo el modelo de franquicia, acompañándote y explicándote 
+                                    cada paso de este proceso. $170,000 (Siento setenta mil pesos 00/100 M.N.) + IVA.
+                                </p>
+                            </li>
+    
+    
+                        </ul>
+                    </p-accordionTab>
+                    <p-accordionTab header="¿Qué métodos de pago aceptan dentro de su plataforma?"
+                        style="text-align: justify;">
+                        Los métodos de pago que tenemos habilitados para nuestros usuarios son:
+                        <br>
+                        <br>
+                        <ul>
+                            <li>• Pay-pal.</li>
+                            <li>• Tarjeta de credito y debito.</li>
+                        </ul>
+                    </p-accordionTab>
+                    <p-accordionTab
+                        header="¿Y si deseo desarrollar mi negocio bajo el modelo de franquicia pero actualmente no cuento con los fondos suficientes?"
+                        style="text-align: justify;">
+                        No tienes nada de qué preocuparte, FranquiciaT cuenta con un sistema de financiamiento con el cual, 
+                        de acuerdo a tus posibilidades, te brindaremos las facilidades para desarrollar tu sistema de franquicias bajo un plan de pagos. 
+    
+                    </p-accordionTab>
+                    <p-accordionTab header="¿Cómo funciona su sistema de financiamiento?" style="text-align: justify;">
+                        Para acceder a nuestro financiamiento solo tienes que:
+                        <br>
+                        <br>
+                        <ul>
+                            <li>1. Llenar el formulario disponible en <a routerLink="/financiamiento"
+                                    type="button"><b>financiamiento</b></a></li>
+                            <li>2. Esperar la respuesta a tu solicitud en un lapso no mayor a 24 horas.</li>
+                            <li>3. Una vez que seas autorizado podrás goza de los beneficios de nuestro servicio.</li>
+                        </ul>
+                    </p-accordionTab>
+                    <p-accordionTab header="¿Tengo que ser una empresa para poder franquiciar mi negocio?"
+                        style="text-align: justify;">
+                        No, una persona física puede ser titular de una marca y al mismo tiempo llevar a cabo el proceso de
+                        otorgamiento de franquicias, sin embargo, nuestra recomendación es realizar estos procesos por medio
+                        de una persona moral con el objetivo de realizar una mejor gestión y operación del sistema de
+                        franquicias, nuestra plataforma hermana “DIEZ LEGAL®” te brinda todas las herramientas para
+                        constituir tu empresa de manera online.
+                    </p-accordionTab>
+                    <p-accordionTab header="¿Por qué elegir el modelo de franquicia para hacer crecer mi negocio?"
+                        style="text-align: justify;">
+                        Es un modelo que se adapta a tu tipo de negocio, no requieres ser una empresa multimillonaria para
+                        construir un sistema de franquicias sólido, además, el modelo de franquicia te brinda beneficios
+                        como:
+                        <br>
+                        <br>
+                        <ul>
+                            <li>• Expandir tu negocio de manera ágil y veloz dentro del territorio nacional y en el
+                                extranjero sin asumir los costos económicos y humanos que implica abrir una unidad propia.
+                            </li>
+                            <li>• Te permite recibir un ingreso periódico al mismo tiempo que tu marca se consolida como un
+                                referente en el mercado.</li>
+                            <li>• La responsabilidad de las contrataciones de cada sucursal recaen en la persona que
+                                adquiere tu franquicia y no en ti o en tu empresa.</li>
+                        </ul>
+    
+                    </p-accordionTab>
+                    <p-accordionTab header="¿Qué tipo de negocio puede convertirse en franquicia?"
+                        style="text-align: justify;">
+                        A pesar de lo que la mayoría de las personas piensan, el modelo de franquicia es aplicable no solo
+                        en la comercialización de alimentos, existe una infinidad de negocios que puede acceder a este
+                        modelo por ejemplo:
+                        <br>
+                        <br>
+    
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>• Farmacias. </td>
+                                    <td>• Comercio especializado. </td>
+                                    <td>• Arreglo de ropa.</td>
+                                    <td>• Tecnología y comunicación.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>• Mensajería y paquetería.</td>
+                                    <td>• Energía sustentable.</td>
+                                    <td>• Cafeterías.</td>
+                                    <td>• Educación y Capacitación.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>• Automotrices.</td>
+                                    <td>• Cuidado y atención infantil.</td>
+                                    <td>• Salud y bienestar.</td>
+                                    <td>• Casas de empeño.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>• Servicios profesionales especializados.</td>
+                                    <td>• Servicios financieros.</td>
+                                    <td>• Consultores autorizados.</td>
+                                    <td>• Tintorerías y lavanderías.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>• Entretenimiento y recreación.</td>
+                                    <td>• Textil.</td>
+                                    <td>• Cuidado personal.</td>
+                                    <td>• Turismo.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>• Vivienda</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p-accordionTab>
+                    <p-accordionTab header="¿Cuánto tiempo tardo en tener mis documentos si contrato con ustedes?"
+                        style="text-align: justify;">
+                        FranquiciaT ha desarrollado un sistema probado que nos permite generar toda tu documentación en un plazo de 2 a 3 meses. 
+                        Recuerda que estos plazos están sujetos al tiempo de atención a las solicitudes que te realicemos. 
+    
+                    </p-accordionTab>
+                    <p-accordionTab header="¿Existe algún elemento esencial para poder convertir mi negocio en franquicia?"
+                        style="text-align: justify;">
+                        Lo principal para que tu negocio pueda ser desarrollado bajo este esquema, es que sea un modelo de
+                        negocio rentable, si tus finanzas son sustentables estás casi listo para franquiciarte.
+    
+                    </p-accordionTab>
+                    <p-accordionTab
+                        header="¿Puedo suministrar productos a mis posibles Franquiciatarios y/o definir proveedores exclusivos para adquirir los insumos del negocio?"
+                        style="text-align: justify;">
+                        Sí, como Franquiciante, al proteger los estándares de calidad de tu marca tienes la facultad de
+                        decidir los tipos de insumos y los proveedores que los distribuirán a tus Franquiciatarios.
+                    </p-accordionTab>
+                    <p-accordionTab
+                        header="¿Qué papel representaré en mi negocio al franquiciarlo? ¿Perderé el control del mismo?"
+                        style="text-align: justify;">
+                        Al franquiciar tu negocio te convertirás en un supervisor general del sistema de franquicias
+                        dedicándote a la vigilancia del cumplimiento de los estándares de calidad que has establecido,
+                        asistirás a tus franquiciatarios con asistencia técnica y operativa continúa, y si bien, no desarrollarás la operación contínua y si bien no
+                        desarrollará la operación de cada unidad en lo particular, si contarás con los recursos legales
+                        necesarios para mantener el control general de tu Marca.
+                    </p-accordionTab>
+                    <p-accordionTab header="¿El Contrato de Franquicia tiene alguna duración específica?"
+                        style="text-align: justify;">
+                        Al ser un acuerdo de voluntades, los involucrados pueden definir la mayoría de los lineamientos establecidos en el mismo, 
+                        sin embargo, recomendamos que la vigencia de tu contrato de franquicia atienda al tiempo de retorno de la inversión. 
+                        Nuestros asesores te guiarán para determinar la vigencia que más convenga determinar en tu sistema. 
+    
+                    </p-accordionTab>
+                    <p-accordionTab header="¿Puedo franquiciar mi negocio sin tener una marca registrada?"
+                        style="text-align: justify;">
+                        No, de acuerdo a lo establecido por la Ley Federal de Protección a la Propiedad Industrial, para que
+                        pueda otorgarse una franquicia, es necesario que exista un signo distintivo previamente registrado
+                        ante el Instituto Mexicano de la Propiedad Industrial, en FranquiciaT tenemos el Bloque de Servicios
+                        de Protección a la Propiedad industrial dedicado a todo lo referente con la Marca.
+                    </p-accordionTab>
+                    <p-accordionTab
+                        header="¿Puedo obligar a las personas que adquieren una Franquica a utilizar la imagen de mi negocio y de mi marca de una manera específica?"
+                        style="text-align: justify;">
+                        Sí, el contrato de franquicia contiene disposiciones relacionadas con el uso de los signos
+                        distintivos, la identidad grafica del negocio y las formas en que se realizará la promoción
+                        relacionada con la marca.
+                    </p-accordionTab>
+                </p-accordion>
+    
+            </div>
+        </section>
+    
+    
+    
+    
+        <!-- <section class="bg-grisc py-5">    
+            <div class="container pb-5">
+                <div class="row justify-content-center py-4">
+                    <div class="col-12 col-lg-4 mb-3 negro">
+                        <h1 class="titumb-4">Contáctanos</h1>
+                        <p>Por favor complete la siguiente información con tus dudas o comentarios y nos podremos en contacto con usted.</p>
+                        <a href="mailto:contacto@franquiciat.com.mx"> 
+                        <i class="fas fa-envelope negro"></i> contacto@franquiciat.com
+                        </a>
+                        <br>
+                        <br>
+                        <a href="tel:4424567890">
+                        <i class="fas fa-duotone fa-phone negro"></i> (442) 456 7890
+                        </a>
+                        <div class="row mt-4">
+                            <div class="col-1">
+                                <a href="https://www.facebook.com/FranquiciaT" target="_blank"><i class="fab negro fa-facebook-f"></i></a>
+                            </div>
+                            <div class="col-1">
+                                <a href="https://www.instagram.com/franquiciat/" target="_blank"><i class="fab negro fa-instagram"></i></a>
+                            </div>
+                            <div class="col-1">
+                                <a href="https://www.linkedin.com/in/franquiciat/" target="_blank"><i class="fab negro fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3">
+                        <form action="envios.php" method="post" class="seguir">
+                            <div class="redondo p-4" style="background: #222">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 mb-3">
+                                        <input class="input--carrito redondo border-0 p-2" id="fnombre" [(ngModel)]="nombre" name="nombre" placeholder="Nombre" required type="text">
+                                    </div>
+                                    <div class="col-12 col-lg-6 mb-3 pl-lg-0">
+                                        <input class="input--carrito redondo border-0 p-2" id="fapellido" [(ngModel)]="apellidos" name="apellidos" placeholder="Apellido" required type="text">
+                                    </div>
+                                    <div class="col-12">
+                                        <input class="input--carrito redondo border-0 p-2 mb-3" id="femail" [(ngModel)]="email" name="email" placeholder="Correo electrónico" required type="text">
+                                    </div>
+                                    <div class="col-12">
+                                        <input class="input--carrito redondo border-0 p-2 mb-3" id="fempresa" [(ngModel)]="empresa" name="empresa" placeholder="Empresa" required type="text">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea [(ngModel)]="mensaje" name="mensaje" class="input--carrito redondo border-0 p-2 mb-3" id="" cols="30" rows="7" placeholder="Mensaje"></textarea>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <input type="submit" value="Enviar" class="btns--secundario" (click)="contacto(nombre,apellidos,email,empresa,mensaje)">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    
+    </body>

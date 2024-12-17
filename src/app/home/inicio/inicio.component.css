@@ -1,0 +1,977 @@
+/* Fuente Regular */
+@font-face {
+    font-family: 'TT Fors';
+    src: url('./../../../../public/font/tt-fors-font-family/TT-Fors-Display-Trial-Regular-BF668e752e6ec58.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Fuente Italic */
+@font-face {
+  font-family: 'TT Fors italic';
+  src: url('./../../../../public/font/tt-fors-font-family/TT-Fors-Display-Trial-Italic-BF668e7530d478c.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+  
+  /* Fuente Bold */
+  @font-face {
+    font-family: 'TT Fors Bold';
+    src: url('./../../../../public/font/tt-fors-font-family/TT-Fors-Display-Trial-Bold-BF668e752fe1cd0.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  :root{
+    /* Pseudoselectores*/
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --morado: #B47DC7;
+    --rojo: #FE2927;
+  
+    /* Blanco */
+  --blanco-25: rgba(255, 255, 255, 0.25);
+  --blanco-50: rgba(255, 255, 255, 0.5);
+  --blanco-75: rgba(255, 255, 255, 0.75);
+  
+  /* Negro */
+  --negro-25: rgba(0, 0, 0, 0.25);
+  --negro-50: rgba(0, 0, 0, 0.5);
+  --negro-75: rgba(0, 0, 0, 0.75);
+  
+  /* Morado */
+  --morado-25: rgb(183, 124, 200, 0.25);
+  --morado-50: rgba(183, 124, 200, 0.5);
+  --morado-75: rgba(183, 124, 200, 0.75);
+  
+  /* Rojo */
+  --rojo-25: rgba(254, 41, 39, 0.25);
+  --rojo-50: rgba(254, 41, 39, 0.5);
+  --rojo-75: rgba(254, 41, 39, 0.75);
+  
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+  
+  .left {
+    justify-self: center;
+  }
+  
+  .right {
+    justify-self: flex-end;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+  }
+  
+  .font-bebas {
+    font-family: "Bebas Neue", sans-serif;
+    
+  }
+  
+  .font-tt{
+    font-family: "TT Fors", sans-serif;
+  
+  }
+
+  .row{
+    width: 100%;
+    
+  }
+  
+  .morado{
+    color: #EFE36F;
+  }
+  
+  
+  #flex-container3 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #flex-container3 div {
+    width: 400px;
+    text-align: center;
+    line-height: 150px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: Arial;
+  }
+  
+  
+  
+  .imagen:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+  
+  
+  
+  .position-image {
+    size: 100%;
+  }
+  
+  .container-section1 {
+    
+    top: 0;
+    display: grid;
+    width: 100%;
+    padding-top: 12rem;
+  }
+
+  
+  .section1-text {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+  }
+  
+  .container-text-a {
+    padding-top: 1rem;
+    
+  }
+  
+  .section1-text-a {
+    font-size: 5.5rem;
+    color: var(--negro);
+  }
+  
+  .section1-text-b {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--rojo);
+    justify-content: left;
+    font-size: 6rem;
+    width: 48rem;
+    margin-left: 18rem;
+  }
+  
+  .section1-botton {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+  }
+  
+  .section1-botton-btn {
+    font-size: 3.2rem;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    padding-inline: 1rem;
+    border-radius: 30rem;
+    border-width: 2;
+    border-color: white;
+  }
+  
+  .section1-botton-btn:hover {
+    background-color: rgb(0, 0, 0, 0.6);
+  }
+  
+  .container-text-b {
+    font-size: 9rem;
+    line-height: 0.45;
+    padding-bottom: 7rem;
+    padding-top: 12rem;
+    margin-right: 12rem;
+    
+  }
+  
+  .container-text-b .left {
+    display: block;
+    text-align: left;
+    color: var(--rojo);
+  }
+  
+  .container-text-b .center {
+    display: block;
+    text-align: center;
+    color: var(--rojo);
+  }
+  
+  .container-text-b .right {
+    display: block;
+    text-align: right;
+    color: var(--rojo);
+  }
+
+  
+.section2-bg {
+    height: 13rem;
+    width: 100%;
+    background: var(--blanco);
+    color: var(--negro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    padding-top: 40rem;
+    padding-bottom: 20rem;
+  }
+
+  .size-img-section2{
+    height: 8rem;
+    margin-block: auto;
+  }
+  
+  .section2-text, .section2-a {
+    font-family: "Bebas Neue", sans-serif;
+    
+    font-size: 7rem;
+    color: var(--negro);
+  }
+  
+  
+  
+  .section2-a:hover{
+    color: #666;
+    font-size: 6.1rem;
+    text-decoration: underline;
+  }
+  
+  .text_underline {
+    text-decoration: underline;
+    text-decoration-thickness: .2rem;
+  }
+
+  
+  .section3-line-red{
+    height: .8rem;          /* Grosor de la línea */
+    background-color: var(--rojo); /* Color rojo */
+
+  }
+  
+  
+
+  
+  
+  .section4-text{
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    font-family: "TT Fors", sans-serif;
+    font-style: normal;
+    font-size: 2.2rem;
+    letter-spacing: 3.1px;
+    font-weight: 500;
+    color: black;
+    line-height: 2.7rem;
+    text-align: justify;
+  }
+  
+
+  
+  
+  .section5-container{
+    padding-top: 8rem;
+    width: 100%;
+  }
+
+  .s5-imagen-logo{
+    padding-bottom: 5rem;
+  }
+
+  .s5-imagen-franquicia{
+    padding-left: 6rem;
+    padding-right: 1.5rem;
+  }
+
+  .s5-imagen-superior{
+    position: absolute; /* Posiciona la imagen sobre la base */
+    top: 95%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el desplazamiento para centrar */
+    width: 35%; /* Ajusta el tamaño de la imagen superpuesta */
+  }
+  
+  .s5-position-relative {
+    position: relative; /* El contenedor debe ser relativo para posicionar hijos */
+  }
+
+  .s5-col{
+    width: 4.5rem;
+  }
+
+  .s5-grid{
+    margin-bottom: 15rem;
+  }
+
+  .s5-line-vertical{
+    margin-left: .5rem;
+    width: .3rem;
+    height: 99rem;
+    background-color: var(--rojo);
+  }
+
+  .s5-titulo{
+    padding-bottom: 3rem;
+    font-size: 7rem;
+    padding-left: 15rem;
+    padding-right: 8rem;
+    line-height: 9rem;
+  }  
+
+  .s5-text{
+    font-size: 2rem;
+    text-align: justify;
+    padding-right: 8rem;
+    direction: rtl;
+    display: inline-block; /* Limita el texto a un bloque ajustado */
+  }
+
+  .s5-direccion{
+    text-align: end;
+    padding-left: 6rem;
+  }
+
+  .s5-imagen-girada{
+    height: 38rem;
+    margin: auto;
+  }
+
+  .s5-video-container{
+    position: relative; /* Necesario para posicionar elementos internos con absolute */
+    width: 100%;
+    overflow: hidden; /* Elimina contenido extra del video */
+  }
+
+  .s5-video-gif{
+    width: 100%;
+    height: auto;
+    margin-left: 12rem;
+    display: block;
+    pointer-events: none;
+  }
+
+  
+
+  .s5-texto-overlay{
+    position: absolute;
+    top: 81%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 6.5rem;
+  }
+
+  .section6{
+    margin-top: 10rem;
+  }
+
+  .s6-container{
+    position: relative;
+    width: 290px;
+    height: 220px;
+    overflow: hidden; /* Evita que los elementos salgan del contenedor */
+    background-color: var(--morado);
+    border-radius: 2rem;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .s6-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blanco);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  /* Contenedor oculto */
+.s6-hidden-1 {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+/* Contenedor visible */
+.s6-visible-1 {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Contenedor oculto */
+.s6-hidden-2 {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+/* Contenedor visible */
+.s6-visible-2 {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Contenedor oculto */
+.s6-hidden-3 {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+/* Contenedor visible */
+.s6-visible-3 {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.vertical-container {
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  gap: 1px; /* Espaciado opcional entre los elementos */
+}
+
+.s6-icono1{
+  height: 5rem;
+}
+
+.s6-text{
+  font-size: 2.4rem;
+  margin-top: 4rem;
+}
+
+.s6-text-oculto{
+  font-size: 1.8rem;
+    margin: 1rem 1rem;
+    color: var(--blanco);
+    padding-top: 4.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.s7-container{
+  margin-top: 10rem;
+}
+
+.s7-image-container{
+  position: relative;
+  height: auto;
+}
+
+.s7-image{
+  display: block; /* Asegura que la imagen base se muestre normalmente */
+  width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+}
+
+.s7-logo{
+  position: absolute; /* Posiciona esta imagen relativa al contenedor */
+  top: 50%; /* Posición vertical */
+  left: 50%; /* Posición horizontal */
+  transform: translate(-50%, -50%); /* Centra la imagen superpuesta */
+  width: 50%; /* Tamaño de la imagen superpuesta (ajusta según tu diseño) */
+}
+
+.s8-image{
+  width: 100%; /* Ajusta el tamaño de la imagen base */
+  display: block; /* Asegura que no haya espacios inesperados debajo */
+}
+
+.s8-container{
+  margin-top: 15rem;
+}
+
+.s8-container-carousel{
+  padding-top: 14rem;
+}
+
+.s8-numero-carousel{
+  margin-top: 4rem;
+  font-size: 2.6rem;
+
+}
+
+.s8-text-carousel{
+  font-size: 2.5rem;
+  color: var(--negro);
+  text-align: center;
+  padding-inline: 6rem;
+}
+
+.s8-container-carousel-text{
+  display: grid;
+  place-items: center; /* Centra horizontal y verticalmente */
+  padding-bottom: 5rem;
+  height: 100%; /* Define una altura para el contenedor */ 
+}
+
+
+
+::ng-deep .p-carousel-indicators .p-carousel-indicator{
+  background-color: #888;
+  border-radius: 3rem;
+}
+
+::ng-deep .p-carousel .p-carousel-indicators .p-carousel-indicator button{
+  background-color: #e9ecef;
+  width: 2rem;
+  height: 2rem;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+  border-radius: 0;
+}
+
+::ng-deep .p-carousel-indicators .p-carousel-indicator.p-highlight {
+  background-color: #000;
+  border-radius: 3rem;
+}
+
+::ng-deep .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button{
+  background-color: rgb(128 128 128);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 3rem;
+}
+
+::ng-deep .p-carousel .p-carousel-indicators .p-carousel-indicator button{
+  background-color: #e9ecef;
+    width: 2rem;
+    height: 2rem;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+    border-radius: 3rem;
+}
+
+::ng-deep .p-icon{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.s8-video-gif {
+  width: 100%;
+  height: 75%;
+  padding-right: 5rem;
+  display: block;
+  pointer-events: none;
+}
+.s8-overlay-text {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: right;
+  font-size: 6.5rem;
+  z-index: 10;
+}
+.s8-overlay-image{
+  position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem;
+    z-index: 15;
+}
+
+
+.s8-logo{
+  
+  margin: 10rem 0 10rem 0;
+}
+
+.s8-image{
+  width: 25rem;
+  margin-block: auto;
+}
+
+
+.s9-image-beneficios{
+  padding: 3rem 0 0 8rem;
+  display: block;
+}
+
+.s9-col-carousel{
+  padding: 22rem 0 0 0;
+}
+
+.s9-titulo-carousel{
+  margin-top: 4rem;
+  margin-left: 5.4rem;
+  font-size: 2.8rem;
+  text-align: left;
+  font-weight: 700;
+}
+
+.s9-text-carousel{
+  font-size: 2.5rem;
+  color: var(--negro);
+  text-align: justify;
+  padding-inline: 6rem;
+}
+
+.s9-overlay-text {
+  position: absolute;
+  top: 20%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: left;
+  font-size: 8.5rem;
+  z-index: 10;
+}
+
+.s9-overlay-logo{
+  position: absolute;
+  top: 90%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  width: 35rem;
+  z-index: 15;
+}
+
+
+
+
+
+
+
+
+
+
+
+.width100{
+  width: 100%;
+}
+
+  .imagenLogoNegro{
+    height: 5rem;
+  }
+  
+  .section5-text-a{
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 6.5rem;
+    line-height: 5.2rem;
+    text-align: left;
+    padding-top: 8rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  
+  .section5-text-b{
+    font-family: "TT Fors", sans-serif;
+    font-style: normal;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    text-align: justify;
+    padding-top: 2rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    font-weight: 700;
+    color: var(--negro)
+    
+  }
+  
+  .section5-tipos{
+    margin-top: 2rem;
+    align-self: flex-start;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    
+  }
+  
+  .section5-text-tipos{
+    font-size: 5rem;
+    margin-left: 1.4rem;
+  }
+  
+  .accordion-button{
+    font-size: 2.5rem;
+    border-radius: 6rem;
+    
+    
+    background-color: var(--negro-50);
+  } 
+  
+  .accordion-item{
+    width: 75rem;
+    margin: 0.2rem 0;
+    border-radius: 10rem;
+  }
+  
+  .accordion-body{
+    margin: 0.5rem 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: justify;
+    border-radius: 1rem;
+    background-color: var(--blanco-75);
+  }
+  
+  .section6-text-title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 6rem;
+    margin-bottom: 2rem;
+  }
+  
+  .section6-text-p{
+    font-family: "TT Fors", sans-serif;
+    font-size: 1.1rem;
+  }
+  
+  .btns--bordeblanco{
+    border-color: white;
+  }
+
+  
+  
+
+
+
+
+
+  
+/* RESPONSIVO PARA MOVILES*/
+@media (min-width: 360px) and (max-width: 576px) {
+    .container-section1 {
+      position: absolute;
+      top: 0;
+      display: grid;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding-top: 8rem;
+    }
+  
+    .max{
+      width: 108%;
+    }
+    
+    .section1-text {
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding-top: 4rem;
+    }
+    
+    .container-text-a {
+      padding-bottom: -1rem;
+    }
+    
+    .section1-text-a {
+      font-size: 1.6rem;
+    }
+    
+    .section1-text-b {
+      font-size: 10rem;
+      width: 42rem;
+    }
+    
+    .section1-botton {
+      font-family: "Bebas Neue", sans-serif;
+      font-style: normal;
+      font-size: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-content: center;
+    }
+    
+    .section1-botton-btn {
+      font-size: 2.6rem;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+      padding-inline: 1rem;
+      border-radius: 30rem;
+      border-width: 2;
+      border-color: white;
+    }
+    
+    .section1-botton-btn:hover {
+      background-color: rgb(0, 0, 0, 0.6);
+    }
+    
+    .container-text-b {
+      font-size: 7rem;
+      line-height: 0.4;
+      padding-bottom: 1.5rem;
+    }
+    
+    .container-text-b .left {
+      display: block;
+      text-align: left;
+    }
+    
+    .container-text-b .center {
+      display: block;
+      text-align: center;
+    }
+    
+    .container-text-b .right {
+      display: block;
+      text-align: right;
+    }
+    
+    .section2-bg {
+      height: 13rem;
+      width: 100%;
+      background-color: #B99CE8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-content: center;
+    }
+    
+    .section2-text {
+      font-family: "Bebas Neue", sans-serif;
+      font-style: italic; 
+      font-size: 5rem;
+      color: white;
+    
+    }
+    
+    .section2-a{
+      font-family: "Bebas Neue", sans-serif;
+      font-style: italic; 
+      font-size: 5rem;
+      color: white;
+    }
+    
+    .section2-a:hover{
+      color: #666;
+      font-size: 5.1rem;
+      text-decoration: underline;
+    }
+    
+    .text_underline {
+      text-decoration: underline;
+      text-decoration-thickness: .2rem;
+    }
+    
+    .scrolling-text-container {
+      overflow: hidden;
+      /* Oculta el texto fuera de los límites del contenedor */
+      white-space: nowrap;
+      /* Evita que el texto se divida en varias líneas */
+      background-color: white;
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+    
+    .scrolling-text {
+      display: inline-block;
+      padding-left: 100%;
+      /* Hace que el texto empiece fuera del contenedor */
+      animation: scrollText 800s linear infinite;
+      /* Ajusta la duración aquí */
+      font-weight: bold;
+      /* Estilo del texto */
+      font-family: "Bebas Neue", sans-serif;
+      font-style: italic;
+      font-size: 5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para efecto de profundidad */
+        transform: rotate(-2deg); /* Rota ligeramente para curvar el texto */
+    }
+    
+    @keyframes scrollText {
+      0% {
+        transform: translateX(-70%);
+        /* Empieza fuera del contenedor a la izquierda */
+      }
+    
+      100% {
+        transform: translateX(0);
+        /* Termina dentro del contenedor en el lado derecho */
+      }
+    }
+    
+    .section4-text{
+      padding: 1rem;
+      font-family: "TT Fors italic", sans-serif;
+      font-size: 2rem;
+      color: black;
+      line-height: 2.6rem;
+      text-align: justify;
+    }
+    
+    
+    
+    .section5-container{
+      background-color: #ffffff;
+      border-radius: 6rem;
+      border: 0.6rem solid black;
+      border-color: #0a0a0b;
+      width: 101%;
+      height: 40rem;
+    }
+    
+    .section5-text-a{
+      font-family: "Bebas Neue", sans-serif;
+      font-style: normal;
+      font-size: 4.5rem;
+      line-height: 4.4rem;
+      text-align: left;
+      padding-top: 5rem;
+      padding-left: 6rem;
+      margin-top: 4rem;
+    }
+    
+    .section5-tipos{
+      margin-top: 2rem;
+      align-self: flex-start;
+      margin-left: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .section5-text-tipos{
+      font-size: 5rem;
+      margin-left: 1.4rem;
+    }
+    
+    .accordion-button{
+      font-size: 2rem;
+    } 
+    
+    .accordion-item{
+      width: 35rem;
+    }
+    
+    .accordion-body{
+      font-size: 1rem;
+    }
+    
+    .section6-text-title{
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3rem;
+    }
+    
+    .section6-text-p{
+      font-family: "TT Fors", sans-serif;
+      font-size: 1.1rem;
+    }
+    
+    .btns--bordeblanco{
+      border-color: white;
+    }
+    
+    
+    
+    
+ 
+  }

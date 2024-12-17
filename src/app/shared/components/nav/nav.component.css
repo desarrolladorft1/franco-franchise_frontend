@@ -1,0 +1,258 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root{
+    /* Pseudoselectores*/
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --rosa: #E10D79;
+    --morado: #B99CE8;
+    --amarillo-limon: #EFE36F;
+    --naranja: #F87904;
+    --verde-esmeralda: #0D7D48;
+    --azul: #79BFC8;
+  
+    /* Blanco */
+  --blanco-25: rgba(255, 255, 255, 0.25);
+  --blanco-50: rgba(255, 255, 255, 0.5);
+  --blanco-75: rgba(255, 255, 255, 0.75);
+  
+  /* Negro */
+  --negro-25: rgba(0, 0, 0, 0.25);
+  --negro-50: rgba(0, 0, 0, 0.5);
+  --negro-75: rgba(0, 0, 0, 0.75);
+  
+  /* Rosa */
+  --rosa-25: rgba(225, 13, 121, 0.25);
+  --rosa-50: rgba(225, 13, 121, 0.5);
+  --rosa-75: rgba(225, 13, 121, 0.75);
+  
+  /* Morado */
+  --morado-25: rgba(185, 156, 232, 0.25);
+  --morado-50: rgba(185, 156, 232, 0.5);
+  --morado-75: rgba(185, 156, 232, 0.75);
+  
+  /* Amarillo Limón */
+  --amarillo-limon-25: rgba(239, 227, 111, 0.25);
+  --amarillo-limon-50: rgba(239, 227, 111, 0.5);
+  --amarillo-limon-75: rgba(239, 227, 111, 0.75);
+  
+  /* Naranja */
+  --naranja-25: rgba(248, 121, 4, 0.25);
+  --naranja-50: rgba(248, 121, 4, 0.5);
+  --naranja-75: rgba(248, 121, 4, 0.75);
+  
+  /* Verde Esmeralda */
+  --verde-esmeralda-25: rgba(13, 125, 72, 0.25);
+  --verde-esmeralda-50: rgba(13, 125, 72, 0.5);
+  --verde-esmeralda-75: rgba(13, 125, 72, 0.75);
+  
+  /* Azul */
+  --azul-25: rgba(121, 191, 200, 0.25);
+  --azul-50: rgba(121, 191, 200, 0.5);
+  --azul-75: 
+
+}
+
+/* Cambiar el estilo del botón de menú */
+.navbar-toggler {
+    background-color: #000000; /* Cambia el color de fondo */
+    color: white;
+    border: 2px solid #ffffff; /* Define el borde blanco */
+    padding: 0.5rem 1rem; /* Ajusta el espacio interno */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar el botón */
+  }
+
+
+
+  .navbar {
+	position: fixed; /* Fija la barra en la parte superior */
+	top: 0;
+	width: 100%;
+	background-color: transparent; /* Fondo transparente inicialmente */
+	transition: background-color 0.3s ease-in-out; /* Transición suave para el fondo */
+	z-index: 1000; /* Para que esté encima del contenido */
+	padding: 0;
+    padding-top: .5rem;
+}
+
+
+.facebook{
+    color: white;
+    size: 10rem;
+    
+}
+
+.font-fb{
+    size: 10rem;
+}
+
+
+.nav-superior{
+    width: 49rem;
+}
+
+.nav-margin{
+    margin: 0, 0, 0, 0;
+    padding: 0, 0;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+  }
+
+.a-nav{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    color: white;
+    margin-left: 5px;
+    text-decoration: none;
+    transition: color 0.3s ease, font-size 0.3s ease; /* Transición para color y tamaño */
+}
+
+.a-nav:hover{
+    color: var(--blanco); /* Color al pasar el mouse */
+	font-size: 1.8rem; /* Tamaño un poco más grande al hacer hover */
+}
+
+.nav-link {
+    background-color: transparent;
+	transition: color 0.3s ease, font-size 0.3s ease; /* Transición para color y tamaño */
+	text-decoration: none; /* Quitar subrayado */
+    color: var(--blanco);
+    font-size: 1.8rem;
+}
+
+/* Efecto hover */
+.nav-link:hover{
+	color: var(--blanco); /* Color al pasar el mouse */
+	font-size: 2rem; /* Tamaño un poco más grande al hacer hover */
+}
+
+.nav-link-drop {
+    background: transparent;
+    
+	transition: color 0.3s ease, font-size 0.3s ease; /* Transición para color y tamaño */
+	text-decoration: none; /* Quitar subrayado */
+    font-size: 1.3rem;
+    color: white;
+}
+
+
+    
+
+.dropdown-toggle{
+    color: var(--blanco);
+}
+
+/* Efecto hover */
+.nav-link-drop:hover{
+    background: var(--blanco);
+	color: var(--negro); /* Color al pasar el mouse */
+	font-size: 1.6rem; /* Tamaño un poco más grande al hacer hover */
+}
+
+.pi-icon{
+    color: white;
+    font-size: 3.2rem;
+    padding-top: 0.2rem;
+    transition: color 0.3s ease, font-size 0.3s ease; /* Transición para color y tamaño */
+}
+
+.pi-icon-carrito{
+    color: white;
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+.icon-cuenta{
+    color: white;
+    font-size: 1.9rem;
+    margin-right: 0.2rem;
+
+}
+
+.pi-icon:hover{
+    color: #989b9f;
+    font-size: 3.4rem;
+}
+
+.size-img{
+    height: 3.4rem;
+    margin-left: 4rem;
+}
+
+li::marker {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+
+nav.scrolled {
+	background: radial-gradient(circle, rgba(0, 0, 0, 0.65) 100%, rgba(0, 0, 0, 0) 100%);
+    backdrop-filter: blur(20px); /* Desenfoque al fondo detrás */
+    border: none; /* Sin bordes visibles */
+    
+}
+
+.width-dorado{
+    width: 7rem;
+}
+
+.bold {
+    font-weight: bold;
+  }
+  
+  .left {
+    justify-self: flex-start;
+  }
+  
+  .right {
+    justify-self: flex-end;
+  }
+  
+  .center {
+    justify-self: center;
+  }
+  
+  .font-bebas {
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  @media (min-width: 359px) and (max-width: 576px) {
+
+    
+
+    .size-img{
+        height: 5rem;
+        margin-left: 4rem;
+    }
+
+    .nav-superior{
+        width: 10rem;
+    }
+
+    .navbar {
+        position: fixed; /* Fija la barra en la parte superior */
+        top: 0;
+        width: 100%;
+        background-color: transparent; /* Fondo transparente inicialmente */
+        transition: background-color 0.3s ease; /* Transición suave para el fondo */
+        z-index: 1000; /* Para que esté encima del contenido */
+        padding: 0;
+        padding-top: .5rem;
+        
+    }
+
+    
+
+  }

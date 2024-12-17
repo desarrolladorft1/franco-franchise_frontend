@@ -1,0 +1,114 @@
+
+<div class="cart" (click)="ngOnInit()" >
+    <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" >
+        <div class="contador">{{can}}</div>
+        <i class="pi pi-shopping-cart pi-icon-carrito"></i>
+    </a>
+</div>
+
+<ng-template [ngIf]="lleno">
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel"><i class="pi pi-shopping-cart" style="font-size: 1.5rem"></i>Carrito</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <table class="table table-dark table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Producto</th>
+                <th scope="col">Cantidad</th>
+                <!-- <th scope="col">Imagen</th> -->
+                <th scope="col">Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of shoppintCartItems">
+                <td>{{item.producto_nombre}}</td>
+                <td>{{item.cantidad}}</td>
+               <!--  <td><img src="assets/images/{{item.name}}.jpg" width="100%"></td> -->
+                <td>${{item.precio_unitario*item.cantidad}}</td>
+              </tr>
+              
+              <tr class="table-light">
+                <th></th>
+                <!-- <td></td> -->
+                <td>Total:</td>
+                <td>${{total}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <a routerLink="/carrito" type="button" class="btn--amarillo">Ir al carrito <i class="pi pi-angle-double-right" style="font-size: 1rem"></i></a>
+    </div>
+  </div>
+</ng-template>
+
+  <ng-template [ngIf]="vacio">
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel"><i class="pi pi-shopping-cart" style="font-size: 1.5rem"></i>Carrito Vacío</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+    </div>
+
+  </ng-template>
+
+  
+    <!--codigo de chat de whatsapp -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=+524411400705&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20."
+        class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i></a>
+    <!--fin codigo de chat de whatsapp -->
+  
+<footer class="bg-negro">
+    <div class="container py-5">
+        <div class="row text-center align-items-center text-lg-start justify-content-center justify-content-lg-start">
+            <div class="col-6 col-lg-2 mb-4">
+               <a href="/" ><img src="images/LOGO_FRANQUICIAT-transformed-Photoroom.png"></a>
+            </div>
+            <div class="col-12 col-lg-10">
+                <ul class="d-flex justify-content-center justify-content-lg-end">
+                    <li class="pe-3"><a href="https://www.linkedin.com/company/franquiciat/" target="_blank"><img src="assets/images/redes-1.svg" width="17"></a></li>
+                    <li class="pe-3"><a href="https://www.instagram.com/franquiciat/" target="_blank"><img src="assets/images/redes-2.svg" width="17"></a></li>
+                    <li><a type="button" href="https://www.facebook.com/FranquiciaT" target="_blank"><img src="assets/images/redes-3.svg" width="17" ></a></li>
+                </ul>
+                <ul class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-end">
+                   
+                    <li>
+                        <a class="nav-link ps-lg-3 pe-0 font-bebas" >AVISO DE PRIVACIDAD</a>
+                    </li>
+                    <li>
+                        <a routerLink="/terminos-condiciones" class="nav-link ps-lg-3 pe-0 font-bebas" >TÉRMINOS Y CONDICIONES</a>
+                    </li>
+                    <li>
+                        <a class="nav-link ps-lg-3 pe-0 font-bebas" >POLÍTICA Y COOKIES</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 pt-5">
+                <p class="f10">© 2024 FRANQUICIAT BY DIEZ Y ASOCIADOS.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/dist/wow.js"></script>
+<script>
+  wow = new WOW({
+    animateClass: 'animated',
+    offset:       100,
+    callback:     function(box) {
+    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")}
+  });
+  wow.init();
+</script>
+
+<!-- <script  src="js/index.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<!-- <script  src="js/barba.js"></script> -->
+
+
+  

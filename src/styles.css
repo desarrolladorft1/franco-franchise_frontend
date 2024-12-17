@@ -1,0 +1,81 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: var(--negro);
+    box-shadow: inset 0 0 5px rgb(170, 170, 170);
+    border-radius: 2px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--blanco-75);
+    border-radius: 3px;
+    border: 1px solid #5f5f5f;
+  }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+
+ /* Fuente Italic */
+ @font-face {
+  font-family: 'TT Fors italic';
+  src: url('./../public/font/tt-fors-font-family/TT-Fors-Display-Trial-Italic-BF668e7530d478c.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+  
+
+:root{
+  /* Pseudoselectores*/
+  --blanco: #FFFFFF;
+  --negro: #000000;
+  --morado: #B77CC8;
+  --rojo: #FE2927;
+
+  /* Blanco */
+--blanco-25: rgba(255, 255, 255, 0.25);
+--blanco-50: rgba(255, 255, 255, 0.5);
+--blanco-75: rgba(255, 255, 255, 0.75);
+
+/* Negro */
+--negro-25: rgba(0, 0, 0, 0.25);
+--negro-50: rgba(0, 0, 0, 0.5);
+--negro-75: rgba(0, 0, 0, 0.75);
+
+/* Morado */
+--morado-25: rgb(183, 124, 200, 0.25);
+--morado-50: rgba(183, 124, 200, 0.5);
+--morado-75: rgba(183, 124, 200, 0.75);
+
+/* Rojo */
+--rojo-25: rgba(254, 41, 39, 0.25);
+--rojo-50: rgba(254, 41, 39, 0.5);
+--rojo-75: rgba(254, 41, 39, 0.75);
+}
+
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+
+.ui-dropdown-panel, .ui-multiselect-panel {
+  z-index: 1050 !important; /* Asegura que se renderice por encima de otros elementos */
+}
