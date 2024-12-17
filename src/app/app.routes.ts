@@ -12,7 +12,7 @@ export const routes: Routes = [
 
 
     {
-        path: 'inicio',
+        path: 'home',
         loadComponent: () => import('./home/inicio/inicio.component'),
         children:[
             
@@ -44,7 +44,7 @@ export const routes: Routes = [
         component: FinanciamientoComponent
     },
     {
-        path: 'citas',
+        path: 'appointments',
         title: 'Citas',
         component: CitasComponent
     },
@@ -55,7 +55,7 @@ export const routes: Routes = [
     },
     {
         path: '',
-        redirectTo: '/inicio',
+        redirectTo: '/home',
         pathMatch: 'full'
     }
 ];

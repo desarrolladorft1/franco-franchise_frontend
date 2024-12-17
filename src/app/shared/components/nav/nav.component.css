@@ -110,14 +110,14 @@
     font-weight: 400;
     font-style: normal;
     font-size: 1.6rem;
-    color: white;
+    color: var(--negro);
     margin-left: 5px;
     text-decoration: none;
     transition: color 0.3s ease, font-size 0.3s ease; /* Transición para color y tamaño */
 }
 
 .a-nav:hover{
-    color: var(--blanco); /* Color al pasar el mouse */
+    color: red; /* Color al pasar el mouse */
 	font-size: 1.8rem; /* Tamaño un poco más grande al hacer hover */
 }
 
@@ -125,13 +125,13 @@
     background-color: transparent;
 	transition: color 0.3s ease, font-size 0.3s ease; /* Transición para color y tamaño */
 	text-decoration: none; /* Quitar subrayado */
-    color: var(--blanco);
+    color: var(--negro);
     font-size: 1.8rem;
 }
 
 /* Efecto hover */
 .nav-link:hover{
-	color: var(--blanco); /* Color al pasar el mouse */
+	color: red; /* Color al pasar el mouse */
 	font-size: 2rem; /* Tamaño un poco más grande al hacer hover */
 }
 
@@ -141,38 +141,38 @@
 	transition: color 0.3s ease, font-size 0.3s ease; /* Transición para color y tamaño */
 	text-decoration: none; /* Quitar subrayado */
     font-size: 1.3rem;
-    color: white;
+    color: var(--negro);
 }
 
 
     
 
 .dropdown-toggle{
-    color: var(--blanco);
+    color: var(--negro);
 }
 
 /* Efecto hover */
 .nav-link-drop:hover{
     background: var(--blanco);
-	color: var(--negro); /* Color al pasar el mouse */
+	color: red; /* Color al pasar el mouse */
 	font-size: 1.6rem; /* Tamaño un poco más grande al hacer hover */
 }
 
 .pi-icon{
-    color: white;
+    color: red;
     font-size: 3.2rem;
     padding-top: 0.2rem;
     transition: color 0.3s ease, font-size 0.3s ease; /* Transición para color y tamaño */
 }
 
 .pi-icon-carrito{
-    color: white;
+    color: red;
     font-size: 2rem;
     margin-right: 5px;
 }
 
 .icon-cuenta{
-    color: white;
+    color: red;
     font-size: 1.9rem;
     margin-right: 0.2rem;
 
@@ -198,7 +198,7 @@ li::marker {
 
 
 nav.scrolled {
-	background: radial-gradient(circle, rgba(0, 0, 0, 0.65) 100%, rgba(0, 0, 0, 0) 100%);
+	background: radial-gradient(circle, rgba(243, 243, 243, 0.65) 100%, rgba(255, 255, 255, 0) 100%);
     backdrop-filter: blur(20px); /* Desenfoque al fondo detrás */
     border: none; /* Sin bordes visibles */
     
