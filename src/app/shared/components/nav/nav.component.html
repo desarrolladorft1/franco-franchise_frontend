@@ -1,93 +1,132 @@
 <nav class="navbar navbar-expand-lg pb-1 d-block scrolled">
 
-	<div class="container" style="height: 4rem;">
-	  <div class="navbar__top dorado d-flex flex-column flex-lg-row justify-content-between align-items-center w-100">
 
-		<div class="navbar__top--left f12">
-			<ul class="d-flex">
-			  <!-- <li><i routerLink="/newsletter"class="far fa-envelope"></i> Newsletter</li>
-			  <li class="d-flex align-items-center ms-3">
-				<a routerLink="/" style="color:#C59B51">Registrar</a>
-			  </li> -->
-	
-			 <!--  <ng-template [ngIf]="activa"> -->
-				<li class="d-flex align-items-center ms-3">
-				  <div class="dropdown">
-					<!-- <a role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Regístrate</a>
-					<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-					  <li>
-						<a class="nav-link" style="background-color:rgb(255, 255, 255);"
-						>Abogado</a>
-					  </li>
-					  <li>
-						<a class="nav-link" style="background-color:rgb(255, 255, 255);"
-						>Notario ó Corredor</a>
-					  </li>
-					</ul> -->
-				  </div>
-				</li>
-			 <!--  </ng-template> -->
-	
-			</ul>
-	
-		  </div>
+	<!--  <ng-template [ngIf]="activa"> -->
+	<div class="row mt-1 nav-margin" style="width: 100%;">
+		<div class="col-3 center" style="position: relative;">
+			<a class="navbar-brand">
+				<img class="size-img" src="images/LogoFranco.png" alt="LogoBlanco" />
+			</a>
+		</div>
+		<div class="col center">
+			<button id="arrow" class="navbar-toggler mt-4" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<i class="pi pi-bars"></i>
+				<script src="assets/json/lottie.js" type="text/javascript"></script>
+				<script src="assets/json/index2.js" type="text/javascript"></script>
+			</button>
+			<div class="collapse navbar-collapse flex-column py-3 align-items-center" id="navbarSupportedContent">
 
-		<div class="nav__bar--right f12 nav-superior" >
-			<ul class="d-flex">
-	
-			  <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
-				>
-				<!-- <div class="dropdown"> -->
-				  <!-- <a routerLink="/perfil"  style="color: white;" title="Mi Cuenta Login" href="javascript:void(0)"
-					class="negro" ><i class="far fa-user"></i> </a> -->
-	
-				  <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color:#BFBFBF;">
-						<ng-template [ngIf]="activa">
-					<li><a class="nav-link " style="background-color:rgb(0, 0, 0);" routerLink="/perfil"> Mi
-						cuenta</a></li>
-						</ng-template>
-					<li><a class="nav-link " style="background-color:rgb(0, 0, 0);" (click)="logout()"
-						type="button">Cerrar Sesión</a></li>
-				  </ul> -->
-	
-				<!-- </div> -->
+				<ul class="navbar-nav mb-2 mb-lg-0 text-center">
 
-				
+					<li class="nav-item">
+						<!-- nombre no iluminado class="nav-link-local ps-lg-5 -->
+						<a class="nav-link-local ps-lg-5 pe-0 fk-grotesk-regular " routerLink="/home">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link-local ps-lg-5 pe-0 fk-grotesk-regular" routerLink="/desarrollo">PRICES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link-local ps-lg-5 pe-0 fk-grotesk-regular" routerLink="/test">ADVICE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link-local ps-lg-5 pe-0 fk-grotesk-regular" routerLink="/financiamiento">MODULES</a>
+					</li>
+					<!-- <li class="nav-item dropdown">
+						<a class="nav-link-local dropdown-toggle ps-lg-5 pe-0 fk-grotesk-regular" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+						  PRICES
+						</a>
+						<ul class="dropdown-menu" style="background: radial-gradient(circle, rgba(0, 0, 0, 0.65) 100%, rgba(0, 0, 0, 0) 100%);">
+						  <li><a class="dropdown-item nav-link-local-drop font-bebas" href="#">Plans</a></li>
+						  <li><a class="dropdown-item nav-link-local-drop font-bebas"  routerLink="/financiamiento">Financing</a></li>
+						</ul>
+					  </li> -->
+					<!-- <li class="nav-item dropdown">
+						<a
+						  class="nav-link-local dropdown-toggle ps-lg-5 pe-0 fk-grotesk-regular"
+						  href="#"
+						  role="button"
+						  data-bs-toggle="dropdown"
+						  aria-expanded="false"
+						  
+						>
+						  ASESORY
+						</a>
+						<ul class="dropdown-menu" style="background: radial-gradient(circle, rgba(0, 0, 0, 0.65) 100%, rgba(0, 0, 0, 0) 100%);">
+						  <li><a class="dropdown-item nav-link-local-drop font-bebas" routerLink="/appointments">AppointmentS</a></li>
+						  <li><a class="dropdown-item nav-link-local-drop font-bebas" routerLink="/cursos">Courses</a></li>
+						</ul>
+					  </li> -->
+					<li class="nav-item">
+						<a class="nav-link-local ps-lg-5 pe-0 fk-grotesk-regular" routerLink="/contacto">AI CONTRACTS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link-local ps-lg-5 pe-0 fk-grotesk-regular" routerLink="/contacto">US</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link-local ps-lg-5 pe-0 fk-grotesk-regular" routerLink="/contacto">CONTACT</a>
+					</li>
+					
 
 
-			  </li>
-			<!--   <ng-template [ngIf]="activa"> -->
-            <!-- (click)="loginWithRedirect()"  -->
-			<li *ngIf="!isAuthenticated" class="px-2 width-li">
+
+
+				</ul>
+
+			</div>
+		</div>
+		<div class="col-2 center" style="display: flex; justify-content: right; align-items:center">
+			<li *ngIf="!isAuthenticated" class="px-2 width-li ">
 				<!-- Mostrar "Mi cuenta" si no hay usuario autenticado -->
-				<a (click)="Login()" routerLink="" class="a-nav">
-				  <i class="pi pi-user icon-cuenta"></i> Log in
+				<a (click)="Login()" routerLink="" class="a-nav-drop nav-combo">
+					Log in
 				</a>
 			</li>
 			<li *ngIf="isAuthenticated" class="px-2 width-li">
 				<!-- Mostrar dropdown si el usuario está autenticado -->
-				<div  class="dropdown">
-				  <a *ngIf="auth.user$ | async as user" class="dropdown-toggle a-nav" data-bs-toggle="dropdown">
-					<i class="pi pi-user icon-cuenta"></i> {{ user.name }}
-				  </a>
-				  <ul class="dropdown-menu" style="background: radial-gradient(circle, rgba(0, 0, 0, 0.65) 100%, rgba(0, 0, 0, 0) 100%);">
-					<li>
-					  <a class="dropdown-item nav-link-drop font-bebas" routerLink="/mi-cuenta">My account</a>
-					</li>
-					<li>
-					  <a class="dropdown-item nav-link-drop font-bebas" (click)="LogOut()">Log out</a>
-					</li>
-				  </ul>
+				<div class="dropdown fk-grotesk-regular">
+					<a *ngIf="auth.user$ | async as user" class="dropdown-toggle a-nav-drop nav-combo fk-grotesk-regular"
+						data-bs-toggle="dropdown">
+						{{ user.given_name }}
+					</a>
+					<ul class="dropdown-menu"
+						style="background: radial-gradient(circle, rgba(243, 243, 243, 0.65) 100%, rgba(255, 255, 255, 0) 100%);">
+						<li>
+							<a class="dropdown-item nav-link-local-drop fk-grotesk-regular" routerLink="/mi-cuenta">MY ACCOUNT
+								</a>
+						</li>
+						<li>
+							<a class="dropdown-item nav-link-local-drop fk-grotesk-regular" (click)="LogOut()">LOG OUT</a>
+						</li>
+					</ul>
+					
 				</div>
-			  </li>
-			  
-			  
-			  <li class="px-2 width-li">
-				<a routerLink="/carrito" class="a-nav"> 
-					<i class="pi pi-shopping-cart pi-icon-carrito"></i>     Cart
-				</a>
-			  </li>
-			  <li class="px-3">
+			</li>
+			
+		</div>
+		<div class="col-1 center" style="display: flex; justify-content: center; align-items:center">
+			<p-drawer header="Right Drawer" [(visible)]="visible" position="right">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat.
+				</p>
+			</p-drawer>
+			<p-button styleClass="boton-drawer" type="button" (click)="visible = true" icon="pi pi-bars" />
+		</div>
+
+
+
+	</div>
+	<!--  </ng-template> -->
+</nav>
+
+
+
+<!-- 
+ 	ICONOS REDES SOCIALES
+	<li class="px-3">
 				<a class="a-nav" href="https://www.instagram.com/franquiciat?igsh=MXRuczA4Z3B1aWc3ZA==">
 					<i class="pi pi-instagram pi-icon"></i>
 				</a>
@@ -96,105 +135,13 @@
 				<a class="a-nav " href="https://www.facebook.com/FranquiciaT?mibextid=ZbWKwL">
 					<i class="pi pi-facebook pi-icon"></i>
 				</a>
-			</li>
-			<!--   </ng-template> -->
-	
-			  <!--     <ng-template [ngIf]="activa">  -->
-			  <li>
-			<!-- 	<a routerLink="/contactanos" style="color:#C59B51"> <img src="assets/images/contact.svg" alt="Diez legal"
-					width="17" />
-				  Contáctanos</a> -->
-			  </li>
-			  <!--   </ng-template> -->
-			</ul>
-		  </div>
-	  </div>
-	</div>
-	<!--  <ng-template [ngIf]="activa"> -->
-	<div class="container mt-1 nav-margin" >
-	  <a class="navbar-brand position-relative" >
-		<img class="size-img" src="images/LogoFranco.png" alt="LogoBlanco"/>
-	  </a>
-	  <button id="arrow" class="navbar-toggler mt-4" type="button" data-bs-toggle="collapse"
-		data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-		aria-label="Toggle navigation">
-		<i class="pi pi-bars"></i>
-		<script src="assets/json/lottie.js" type="text/javascript"></script>
-		<script src="assets/json/index2.js" type="text/javascript"></script>
-	  </button>
-  
-	  <div class="collapse navbar-collapse flex-column py-3 align-items-end" id="navbarSupportedContent" >
-  
-		<ul class="navbar-nav mb-2 mb-lg-0 text-center">
-		
-			<li class="nav-item">
-				<!-- nombre no iluminado class="nav-link ps-lg-5 -->
-				<a class="nav-link ps-lg-5 pe-0 bebas-neue-regular " routerLink="/home">HOME</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link ps-lg-5 pe-0 bebas-neue-regular" routerLink="/desarrollo" >DEVELOPMENT</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link ps-lg-5 pe-0 bebas-neue-regular" routerLink="/test">IS MY BUSINESS FRANCHISABLE?</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link ps-lg-5 pe-0 bebas-neue-regular" routerLink="/financiamiento">MODULES</a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle ps-lg-5 pe-0 bebas-neue-regular" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-				  PRICES
+			</li> 
+  -->
+
+<!-- CARRITO
+			<li class="px-2 width-li">
+				<a routerLink="/carrito" class="a-nav"> 
+					<i class="pi pi-shopping-cart pi-icon-carrito"></i>     Cart
 				</a>
-				<ul class="dropdown-menu" style="background: radial-gradient(circle, rgba(0, 0, 0, 0.65) 100%, rgba(0, 0, 0, 0) 100%);">
-				  <li><a class="dropdown-item nav-link-drop font-bebas" href="#">Plans</a></li>
-				  <li><a class="dropdown-item nav-link-drop font-bebas"  routerLink="/financiamiento">Financing</a></li>
-				</ul>
 			  </li>
-			  <li class="nav-item dropdown">
-				<a
-				  class="nav-link dropdown-toggle ps-lg-5 pe-0 bebas-neue-regular"
-				  href="#"
-				  role="button"
-				  data-bs-toggle="dropdown"
-				  aria-expanded="false"
-				  
-				>
-				  ASESORY
-				</a>
-				<ul class="dropdown-menu" style="background: radial-gradient(circle, rgba(0, 0, 0, 0.65) 100%, rgba(0, 0, 0, 0) 100%);">
-				  <li><a class="dropdown-item nav-link-drop font-bebas" routerLink="/appointments">AppointmentS</a></li>
-				  <li><a class="dropdown-item nav-link-drop font-bebas" routerLink="/cursos">Courses</a></li>
-				</ul>
-			  </li>
-			  
-			
-			<!-- <li class="nav-item">
-				<a class="nav-link ps-lg-5 pe-0" routerLink="/cursos">CURSOS</a>
-			</li> -->
-			<!-- <li class="nav-item">
-				<a class="nav-link ps-lg-5 pe-0" routerLink="/recursos">RECURSOS</a>
-			</li> -->
-			<!-- <li class="nav-item">
-				<a class="nav-link ps-lg-5 pe-0" routerLink="/testimoniales">TESTIMONIALES</a>
-			</li>-->
-			<!-- <li class="nav-item">
-				<a class="nav-link ps-lg-5 pe-0 bebas-neue-regular" (click)="LogOut()" >CONTRATOS IA</a>
-			</li> -->
-			<!-- <li class="nav-item">
-				<a class="nav-link ps-lg-5 pe-0 bebas-neue-regular" routerLink="/marcas">MARCAS</a>
-			</li>  -->
-			<!-- <li class="nav-item">
-				<a class="nav-link ps-lg-5 pe-0 bebas-neue-regular" routerLink="/nosotros">NOSOTROS</a>
-			</li> -->
-			<li class="nav-item">
-				<a class="nav-link ps-lg-5 pe-0 bebas-neue-regular" routerLink="/contacto">CONTACT</a>
-			</li>
-			
-			
-		
-		 
-		</ul>
-		
-	  </div>
-	</div>
-	<!--  </ng-template> -->
-  </nav>
+  -->

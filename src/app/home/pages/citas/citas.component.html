@@ -73,7 +73,10 @@
               <div class="col-12 col-lg-12">
                 <div class="lista--cursos mb-4">
                   <div class="row align-items-center">
-                    <div class="col-12 col-lg-4 mb-4 lawyer-item-list" routerLink="/citas/detalle/{{ abog.idAbogado }}">
+                    <!-- routerLink="/citas/detalle/{{ abog.idAbogado }}" Va dentro del div de abajo-->
+                    <div class="col-12 col-lg-4 mb-4 lawyer-item-list" 
+                    
+                    >
                       <!-- <img src="assets/images/diez-legal--lista-curso.jpg" /> -->
                       <img src="{{abog.avatar}}" class="d-block w-100">
                     </div>
@@ -89,7 +92,7 @@
                           {{ abog.nombres }} {{ abog.apellidos }}
                         </h5>
                         <p class="p_large">{{ abog.specialty }}</p>
-                        <p-rating [(ngModel)]="abog.rating" [readonly]="true" [cancel]="false"
+                        <p-rating [(ngModel)]="abog.rating" [readonly]="true"
                           [iconOnClass]="'fas fa-star star-selected'" [iconOffClass]="'fas fa-star star-no-selected'">
                         </p-rating>
                         <p>{{ abog.cantOpiniones + " " }}opiniones</p>

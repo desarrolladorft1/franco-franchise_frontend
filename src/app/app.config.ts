@@ -8,8 +8,9 @@ import { UniversalService } from './services/universal.service';
 import { franquiciaTService } from './services/franquiciaT.service';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-
-import Aura from '@primeng/themes/aura';
+import { providePrimeNG } from 'primeng/config';
+import Aura from '@primeng/themes/material';
+import { Theme } from '@fullcalendar/core/internal';
 
 
 export const appConfig: ApplicationConfig = {
@@ -34,7 +35,12 @@ export const appConfig: ApplicationConfig = {
       }
       })
     ),
-    provideAnimations()
+    provideAnimations(),
+    providePrimeNG({
+      theme: {
+        preset: Aura
+      }
+    })
     
   ]
 };

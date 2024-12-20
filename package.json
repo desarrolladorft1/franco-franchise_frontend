@@ -28,13 +28,13 @@
     "@fullcalendar/timegrid": "^6.1.15",
     "@ng-bootstrap/ng-bootstrap": "^17.0.1",
     "@popperjs/core": "^2.11.8",
-    "@primeng/themes": "^18.0.0",
+    "@primeng/themes": "^18.0.2",
     "@types/jquery": "^3.5.32",
     "bootstrap": "^5.3.3",
     "jquery": "^3.7.1",
     "ngx-spinner": "^17.0.0",
     "primeicons": "^7.0.0",
-    "primeng": "^17.18.13",
+    "primeng": "^18.0.2",
     "sweetalert2": "^11.14.5"
   },
   "devDependencies": {

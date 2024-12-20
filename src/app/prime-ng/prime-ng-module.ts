@@ -36,7 +36,7 @@ import { SelectButtonModule } from 'primeng/selectbutton';
 import { CalendarModule } from 'primeng/calendar';
 import { SidebarModule } from 'primeng/sidebar';
 import { PaginatorModule } from 'primeng/paginator';
-import { DynamicDialogModule } from 'primeng/dynamicdialog';
+
 import { DataViewModule } from 'primeng/dataview';
 import { DropdownModule } from 'primeng/dropdown';
 import { PanelModule } from 'primeng/panel';
@@ -56,7 +56,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { Carousel } from 'primeng/carousel';
 
-import { InputTextareaModule } from 'primeng/inputtextarea';
+
 
 
 //Courses
@@ -109,7 +109,6 @@ import { RippleModule } from 'primeng/ripple';
         ToggleButtonModule,
         FieldsetModule,
         SliderModule,
-        DynamicDialogModule,
         TabViewModule,
         ConfirmDialogModule,
         StepsModule,
@@ -137,7 +136,6 @@ import { RippleModule } from 'primeng/ripple';
         SplitterModule,
         AvatarModule,
         TabMenuModule,
-        InputTextareaModule,
         CardModule,
         StyleClassModule,
         CarouselModule

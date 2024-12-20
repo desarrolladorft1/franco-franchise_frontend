@@ -116,6 +116,30 @@
     size: 100%;
   }
   
+  .s1-bg{
+    margin-top: 10rem;
+    height: 40rem;
+  }
+
+  .s1-container-image{
+    position: relative;
+  }
+
+  .s1-image{
+    position: absolute;
+    top: 0%;
+    left: 70%;
+    transform: translate(-50%, -10%);
+    width: 95%;
+  }
+
+  .s1-text{
+    font-family: 'FK Grotesk regular', 'sans-serif';
+    color: var(--rojo);
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
   .container-section1 {
     
     top: 0;

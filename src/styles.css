@@ -22,16 +22,15 @@
   width: 10px;
 }
 
-
-
- /* Fuente Italic */
- @font-face {
-  font-family: 'TT Fors italic';
-  src: url('./../public/font/tt-fors-font-family/TT-Fors-Display-Trial-Italic-BF668e7530d478c.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
   
+@font-face {
+  font-family: 'FK Grotesk regular';
+  src: url('./../public/font/FKGroteskTrial/FKGroteskMonoTrial-Regular.otf') format('truetype');
+  font-weight: normal;
+}
+
+
+
 
 :root{
   /* Pseudoselectores*/
